@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "yes:fire_wand"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "YY",
+      " X",
+      " X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:stick"
+      },
+      "Y": {
+        "item": "minecraft:blaze_rod"
+      }
+    },
+    "result": {
+      "item": "yes:fire_wand"
+    }
+  }
+}
