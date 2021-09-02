@@ -2,12 +2,12 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "magic:fire_wand",
+            "identifier": "magic:storm_wand",
             "category": "equipment"
         },
         "components": {
             "minecraft:icon": {
-                "texture": "fire_wand"
+                "texture": "storm_wand"
             },
             "minecraft:display_name": {},
             "minecraft:creative_category": {
@@ -32,8 +32,8 @@
                 "repair_items": [
                     {
                         "items": [
-                            "magic:fire_wand",
-                            "minecraft:blaze_rod"
+                            "magic:storm_wand",
+                            "minecraft:glowstone"
                         ],
                         "repair_amount": 60
                     }
@@ -41,7 +41,7 @@
             },
 			"minecraft:on_use": {
 				"on_use": {
-					"event": "shoot_fireball",
+					"event": "shoot_stormball",
 					"target": "self"
 				}
 			},
@@ -56,7 +56,7 @@
             "minecraft:can_destroy_in_creative": false
         },
         "events": {
-            "shoot_fireball": {
+            "shoot_stormball": {
 				"sequence": [
 					{
                         "damage": {
@@ -71,9 +71,8 @@
                     },
                     {
                         "shoot": {
-                            "projectile": "minecraft:small_fireball",
-                            "launch_power": 1,
-                            "angle_offset": 0
+                            "projectile": "magic:stormball",
+                            "launch_power": 1
                         }
                     },
                     {

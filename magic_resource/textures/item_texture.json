@@ -4,6 +4,21 @@
   "texture_data": {
     "fire_wand": {
       "textures": "textures/items/fire_wand"
+    },
+    "ice_wand": {
+      "textures": "textures/items/ice_wand"
+    },
+    "storm_wand": {
+      "textures": "textures/items/storm_wand"
+    },
+    "flameball": {
+      "textures": "textures/items/flameball"
+    },
+    "frostball": {
+      "textures": "textures/items/frostball"
+    },
+    "stormball": {
+      "textures": "textures/items/stormball"
     }
   }
 }

@@ -2,11 +2,11 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "magic:fire_wand",
+      "identifier": "magic:ice_wand",
       "category": "Equipment"
     },
     "components": {
-      "minecraft:icon": "fire_wand",
+      "minecraft:icon": "ice_wand",
       "minecraft:render_offsets": "miscellaneous"
     }
   }

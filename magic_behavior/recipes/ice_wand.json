@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "magic:fire_wand"
+    "identifier": "magic:ice_wand"
     },  
     "tags": [ "crafting_table" ],
     "pattern": [
@@ -15,14 +15,14 @@
         "item": "minecraft:stick"
       },
       "Y": {
-        "item": "minecraft:blaze_rod"
+        "item": "minecraft:blue_ice"
       },
       "Z": {
         "item": "minecraft:lapis_block"
       }
     },
     "result": {
-      "item": "magic:fire_wand"
+      "item": "magic:ice_wand"
     }
   }
 }

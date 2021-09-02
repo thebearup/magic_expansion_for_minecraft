@@ -2,12 +2,12 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "magic:fire_wand",
+            "identifier": "magic:ice_wand",
             "category": "equipment"
         },
         "components": {
             "minecraft:icon": {
-                "texture": "fire_wand"
+                "texture": "ice_wand"
             },
             "minecraft:display_name": {},
             "minecraft:creative_category": {
@@ -32,8 +32,8 @@
                 "repair_items": [
                     {
                         "items": [
-                            "magic:fire_wand",
-                            "minecraft:blaze_rod"
+                            "magic:ice_wand",
+                            "minecraft:blue_ice"
                         ],
                         "repair_amount": 60
                     }
@@ -41,7 +41,7 @@
             },
 			"minecraft:on_use": {
 				"on_use": {
-					"event": "shoot_fireball",
+					"event": "shoot_frostball",
 					"target": "self"
 				}
 			},
@@ -56,7 +56,7 @@
             "minecraft:can_destroy_in_creative": false
         },
         "events": {
-            "shoot_fireball": {
+            "shoot_frostball": {
 				"sequence": [
 					{
                         "damage": {
@@ -71,9 +71,9 @@
                     },
                     {
                         "shoot": {
-                            "projectile": "minecraft:small_fireball",
-                            "launch_power": 1,
-                            "angle_offset": 0
+                            "projectile": "magic:frostball",
+                            "angle_offset": 0,
+                            "launch_power": 1
                         }
                     },
                     {
