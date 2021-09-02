@@ -71,7 +71,7 @@
                     },
                     {
                         "shoot": {
-                            "projectile": "minecraft:small_fireball",
+                            "projectile": "magic:flameball",
                             "launch_power": 1,
                             "angle_offset": 0
                         }
