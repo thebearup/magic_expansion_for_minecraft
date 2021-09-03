@@ -25,7 +25,7 @@
         },
         "render_controllers": [ "controller.render.fireball" ],
         "particle_effects": {
-          "particle": "minecraft:electric_spark_particle"
+          "particle": "minecraft:falling_dust_gravel_particle"
           }
         }
       }

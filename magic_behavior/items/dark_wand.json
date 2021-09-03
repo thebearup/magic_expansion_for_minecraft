@@ -83,7 +83,7 @@
                     {
                         "run_command": {
                             "command": [
-                                "execute @s ~ ~1 ~ particle minecraft:soul_particle ^ ^ ^1",
+                                "execute @s ~ ~2 ~ particle minecraft:soul_particle ^ ^ ^1",
                                 "playsound mob.wither.shoot @s ~ ~ ~ 0.3"
                             ],
                             "target": "holder"
