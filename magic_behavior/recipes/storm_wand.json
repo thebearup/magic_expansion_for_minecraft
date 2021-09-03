@@ -2,9 +2,11 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "magic:storm_wand"
-    },  
-    "tags": [ "crafting_table" ],
+      "identifier": "magic:storm_wand"
+    },
+    "tags": [
+      "crafting_table"
+    ],
     "pattern": [
       "YZY",
       " X",

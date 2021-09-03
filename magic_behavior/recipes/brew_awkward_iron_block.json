@@ -2,14 +2,13 @@
   "format_version": "1.12",
   "minecraft:recipe_brewing_mix": {
     "description": {
-      "identifier": "magic:brew_awkward_iron_block"
+      "identifier": "magic:brew_awkward_shield"
     },
-
-    "tags": [ "brewing_stand" ],
-
+    "tags": [
+      "brewing_stand"
+    ],
     "input": "minecraft:potion_type:awkward",
-    "reagent": "minecraft:iron_block",
+    "reagent": "minecraft:shield",
     "output": "magic:res_potion"
   }
-
 }

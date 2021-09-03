@@ -39,16 +39,16 @@
                     }
                 ]
             },
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "shoot_stormball",
-					"target": "self"
-				}
-			},
-            "minecraft:cooldown":{
-                "category":"storm_wand",
-                "duration":1.0
-             },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "shoot_stormball",
+                    "target": "self"
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "storm_wand",
+                "duration": 1.0
+            },
             "minecraft:weapon": {
                 "on_hurt_entity": {
                     "event": "yes:damage_event",
@@ -61,8 +61,8 @@
         },
         "events": {
             "shoot_stormball": {
-				"sequence": [
-					{
+                "sequence": [
+                    {
                         "damage": {
                             "type": "durability",
                             "amount": 1,
@@ -70,8 +70,7 @@
                         }
                     },
                     {
-                        "swing":{
-                        }
+                        "swing": {}
                     },
                     {
                         "shoot": {

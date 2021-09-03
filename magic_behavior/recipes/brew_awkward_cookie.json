@@ -4,12 +4,11 @@
     "description": {
       "identifier": "magic:brew_awkward_cookie"
     },
-
-    "tags": [ "brewing_stand" ],
-
+    "tags": [
+      "brewing_stand"
+    ],
     "input": "minecraft:potion_type:awkward",
     "reagent": "minecraft:cookie",
     "output": "magic:haste_potion"
   }
-
 }

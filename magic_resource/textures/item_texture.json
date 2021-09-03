@@ -24,11 +24,10 @@
       "textures": "textures/items/stormball"
     },
     "haste_potion": {
-      "textures" : "textures/items/potion_bottle_digSpeed"
+      "textures": "textures/items/potion_bottle_digSpeed"
     },
     "res_potion": {
-      "textures" : "textures/items/potion_bottle_resistance"
+      "textures": "textures/items/potion_bottle_resistance"
     }
-
   }
 }

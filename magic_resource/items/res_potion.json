@@ -2,8 +2,7 @@
   "format_version": "1.14",
   "minecraft:item": {
     "description": {
-      "identifier": "magic:res_potion",
-      "category": "Equipment"
+      "identifier": "magic:res_potion"
     },
     "components": {
       "minecraft:icon": "res_potion",

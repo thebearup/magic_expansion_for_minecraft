@@ -2,9 +2,11 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "magic:fire_wand"
-    },  
-    "tags": [ "crafting_table" ],
+      "identifier": "magic:fire_wand"
+    },
+    "tags": [
+      "crafting_table"
+    ],
     "pattern": [
       "YZY",
       " X",
