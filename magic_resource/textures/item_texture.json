@@ -11,6 +11,9 @@
     "storm_wand": {
       "textures": "textures/items/storm_wand"
     },
+    "dark_wand": {
+      "textures": "textures/items/dark_wand"
+    },
     "flameball": {
       "textures": "textures/items/flameball"
     },
@@ -19,6 +22,13 @@
     },
     "stormball": {
       "textures": "textures/items/stormball"
+    },
+    "haste_potion": {
+      "textures" : "textures/items/potion_bottle_digSpeed"
+    },
+    "res_potion": {
+      "textures" : "textures/items/potion_bottle_resistance"
     }
+
   }
 }

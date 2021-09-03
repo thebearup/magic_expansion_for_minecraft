@@ -45,6 +45,10 @@
 					"target": "self"
 				}
 			},
+            "minecraft:cooldown":{
+                "category":"storm_wand",
+                "duration":1.0
+             },
             "minecraft:weapon": {
                 "on_hurt_entity": {
                     "event": "yes:damage_event",
@@ -78,7 +82,8 @@
                     {
                         "run_command": {
                             "command": [
-                                "execute @s ~ ~ ~ particle minecraft:water_evaporation_bucket_emitter ^ ^ ^1"
+                                "execute @s ~ ~2 ~ particle minecraft:critical_hit_emitter ^ ^ ^1",
+                                "playsound mob.evocation_illager.cast_spell @s ~ ~ ~ 0.3"
                             ],
                             "target": "holder"
                         }

@@ -2,12 +2,12 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "magic:ice_wand",
+            "identifier": "magic:dark_wand",
             "category": "equipment"
         },
         "components": {
             "minecraft:icon": {
-                "texture": "ice_wand"
+                "texture": "dark_wand"
             },
             "minecraft:display_name": {},
             "minecraft:creative_category": {
@@ -32,8 +32,8 @@
                 "repair_items": [
                     {
                         "items": [
-                            "magic:ice_wand",
-                            "minecraft:blue_ice"
+                            "magic:dark_wand",
+                            "minecraft:wither_rose"
                         ],
                         "repair_amount": 60
                     }
@@ -41,12 +41,12 @@
             },
 			"minecraft:on_use": {
 				"on_use": {
-					"event": "shoot_frostball",
+					"event": "shoot_darkball",
 					"target": "self"
 				}
 			},
             "minecraft:cooldown":{
-                "category":"ice_wand",
+                "category":"dark_wand",
                 "duration":1.0
              },
             "minecraft:weapon": {
@@ -60,7 +60,7 @@
             "minecraft:can_destroy_in_creative": false
         },
         "events": {
-            "shoot_frostball": {
+            "shoot_darkball": {
 				"sequence": [
 					{
                         "damage": {
@@ -75,7 +75,7 @@
                     },
                     {
                         "shoot": {
-                            "projectile": "magic:frostball",
+                            "projectile": "magic:darkball",
                             "angle_offset": 0,
                             "launch_power": 1
                         }
@@ -83,8 +83,8 @@
                     {
                         "run_command": {
                             "command": [
-                                "execute @s ~ ~1 ~ particle minecraft:ice_evaporation_emitter ^ ^ ^1",
-                                "playsound mob.evocation_illager.cast_spell @s ~ ~ ~ 0.3"
+                                "execute @s ~ ~1 ~ particle minecraft:soul_particle ^ ^ ^1",
+                                "playsound mob.wither.shoot @s ~ ~ ~ 0.3"
                             ],
                             "target": "holder"
                         }

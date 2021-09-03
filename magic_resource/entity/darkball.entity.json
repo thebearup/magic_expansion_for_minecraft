@@ -2,15 +2,15 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
       "description": {
-        "identifier": "magic:stormball",
+        "identifier": "magic:darkball",
         "materials": {
-          "default": "fireball"
+          "default": "wither_skull"
         },
         "textures": {
-          "default": "textures/items/stormball"
+          "default": "textures/entity/wither_boss/wither"
         },
         "geometry": {
-          "default": "geometry.fireball"
+          "default": "geometry.wither_skull"
         },
         "animations": {
           "face_player": "animation.actor.billboard",
@@ -25,7 +25,7 @@
         },
         "render_controllers": [ "controller.render.fireball" ],
         "particle_effects": {
-          "particle": "minecraft:electric_spark_particle"
+          "particle": "minecraft:falling_dust_dragon_egg_particle"
           }
         }
       }

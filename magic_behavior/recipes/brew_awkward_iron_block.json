@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "magic:brew_awkward_iron_block"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "minecraft:potion_type:awkward",
+    "reagent": "minecraft:iron_block",
+    "output": "magic:res_potion"
+  }
+
+}

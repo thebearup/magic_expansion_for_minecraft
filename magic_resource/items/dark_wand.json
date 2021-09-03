@@ -2,11 +2,11 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "magic:storm_wand",
+      "identifier": "magic:dark_wand",
       "category": "Equipment"
     },
     "components": {
-      "minecraft:icon": "storm_wand",
+      "minecraft:icon": "dark_wand",
       "minecraft:render_offsets": "miscellaneous"
     }
   }

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.arrow_trail": {
+			"states": {
+				"default": {
+					"particle_effects": [
+						{
+							"effect": "particle"
+						}
+					],
+					"transitions": [
+						{
+							"trail": "query.is_alive"
+						}
+					]
+				},
+				"trail": {
+					"particle_effects": [
+						{
+							"effect": "particle"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.is_alive"
+						}
+					]
+				}
+			}
+		}
+	}
+}

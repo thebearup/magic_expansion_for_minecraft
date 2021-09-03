@@ -13,15 +13,21 @@
         "default": "geometry.fireball"
       },
       "animations": {
-        "face_player": "animation.actor.billboard"
+        "face_player": "animation.actor.billboard",
+				"trail": "controller.animation.arrow_trail"
       },
       "scripts": {
         "scale": "0.5",
         "animate": [
-          "face_player"
+          "face_player",
+          "trail"
         ]
       },
-      "render_controllers": [ "controller.render.fireball" ]
+      "render_controllers": [ "controller.render.fireball" ],
+      "particle_effects": {
+        "particle": "minecraft:falling_dust_red_sand_particle"
+      }
     }
+
   }
 }

@@ -21,6 +21,12 @@
           "knockback": false,
           "semi_random_diff_damage": false
         },
+        "particle_on_hit": {
+          "num_particles": 5,
+          "on_entity_hit": true,
+          "on_other_hit": true,
+          "particle_type": "explode"
+        },
         "remove_on_hit": { },
         "definition_event": {
             "event_trigger": {
@@ -29,6 +35,7 @@
             }
         }
       },
+      "hit_sound": "bow.hit",
       "power": 1.3,
       "gravity": 0.00,
       "inertia": 1,

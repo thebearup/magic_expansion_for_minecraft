@@ -3,6 +3,9 @@
 item.magic:fire_wand.name=Flame Wand
 item.magic:ice_wand.name=Frost Wand
 item.magic:storm_wand.name=Storm Wand
+item.magic:dark_wand.name=Dark Wand
+item.magic:haste_potion.name=Haste Potion
+item.magic:res_potion.name=Resistance Potion
 
 entity.flameball.name=FlameBall
 entity.frostball.name=FrostBall
