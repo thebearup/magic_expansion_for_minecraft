@@ -35,7 +35,13 @@
 						"particle_type": "snowballpoof"
 					},
 					"douse_fire": {},
-					"remove_on_hit": {}
+					"remove_on_hit": {},
+					"definition_event": {
+						"event_trigger": {
+						  "event": "magic:freeze_block",
+						  "target": "self"
+						}
+					  }
 				},
 				"hit_sound": "glass",
 				"power": 1.3,
@@ -63,6 +69,25 @@
 					"use_motion_prediction_hints": true
 				}
 			}
-		}
+		},
+		"events": {
+			"magic:freeze_block": {
+			  "run_command": {
+				"command": [
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 ice 0 replace water",
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 obsidian 0 replace lava 0",
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 cobblestone 0 replace lava 1",
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 cobblestone 0 replace lava 2",
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 cobblestone 0 replace lava 3", 
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 cobblestone 0 replace lava 4",
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 cobblestone 0 replace lava 5", 
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 cobblestone 0 replace lava 6",
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 cobblestone 0 replace lava 7",
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air 0 replace fire",
+				  "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air 0 replace soul_fire"
+				]
+			  }
+			}
+		  }
 	}
 }
