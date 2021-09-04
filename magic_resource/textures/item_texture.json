@@ -14,6 +14,9 @@
     "dark_wand": {
       "textures": "textures/items/dark_wand"
     },
+    "float_wand": {
+      "textures": "textures/items/float_wand"
+    },
     "flameball": {
       "textures": "textures/items/flameball"
     },
