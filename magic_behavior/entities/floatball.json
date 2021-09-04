@@ -32,7 +32,7 @@
 						"num_particles": 30,
 						"on_entity_hit": true,
 						"on_other_hit": true,
-						"particle_type": "snowballpoof"
+						"particle_type": "explode"
 					},
 					"remove_on_hit": {}
 				},
