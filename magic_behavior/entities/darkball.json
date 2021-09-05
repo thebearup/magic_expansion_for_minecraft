@@ -31,7 +31,7 @@
 						"num_particles": 5,
 						"on_entity_hit": true,
 						"on_other_hit": true,
-						"particle_type": "largeexplode"
+						"particle_type": "explode"
 					},
 					"remove_on_hit": {}
 				},

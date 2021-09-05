@@ -17,6 +17,12 @@
     "float_wand": {
       "textures": "textures/items/float_wand"
     },
+    "blast_wand": {
+      "textures": "textures/items/blast_wand"
+    },
+    "teleport_amulet": {
+      "textures": "textures/items/teleport_amulet"
+    },
     "flameball": {
       "textures": "textures/items/flameball"
     },
