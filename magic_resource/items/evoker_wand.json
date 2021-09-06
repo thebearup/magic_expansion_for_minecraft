@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:evoker_wand",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "evoker_wand",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}
