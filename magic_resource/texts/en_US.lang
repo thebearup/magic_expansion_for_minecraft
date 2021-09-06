@@ -7,10 +7,13 @@ item.magic:dark_wand.name=Dark Wand
 item.magic:float_wand.name=Float Wand
 item.magic:blast_wand.name=Blast Wand
 item.magic:teleport_amulet.name=Teleport Amulet
+item.magic:float_amulet.name=Float Amulet
 item.magic:haste_potion.name=Haste Potion
 item.magic:res_potion.name=Resistance Potion
 
-entity.flameball.name=FlameBall
-entity.frostball.name=FrostBall
-entity.stormball.name=StormBall
-
+entity.flameball.name=Flame Ball
+entity.frostball.name=Frost Ball
+entity.stormball.name=Storm Ball
+entity.darkball.name=Dark Ball
+entity.floatball.name=Float Ball
+entity.blastball.name=Blast Ball

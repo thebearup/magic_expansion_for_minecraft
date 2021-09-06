@@ -23,6 +23,9 @@
     "teleport_amulet": {
       "textures": "textures/items/teleport_amulet"
     },
+    "float_amulet": {
+      "textures": "textures/items/float_amulet"
+    },
     "flameball": {
       "textures": "textures/items/flameball"
     },

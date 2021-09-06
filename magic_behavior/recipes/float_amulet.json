@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "magic:float_amulet"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " Y",
+      "YXY",
+      " Y"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:lapis_block"
+      },
+      "Y": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "magic:float_amulet"
+    }
+  }
+}
