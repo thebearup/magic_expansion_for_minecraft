@@ -6,7 +6,7 @@
         },
         "structure_name": "mystructure:wizardoutpost",
         "adjustment_radius": 8,
-        "facing_direction": "random",
+        "facing_direction": "south",
         "constraints": {
             "grounded": {}
         }
