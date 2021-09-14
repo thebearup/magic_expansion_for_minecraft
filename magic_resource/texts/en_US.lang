@@ -7,6 +7,7 @@ item.magic:dark_wand.name=Dark Wand
 item.magic:float_wand.name=Float Wand
 item.magic:blast_wand.name=Blast Wand
 item.magic:evoker_wand.name=Evoker Wand
+item.magic:weakness_wand.name=Weakness Wand
 item.magic:teleport_amulet.name=Teleport Amulet
 item.magic:float_amulet.name=Float Amulet
 item.magic:haste_potion.name=Haste Potion

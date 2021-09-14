@@ -23,6 +23,9 @@
     "evoker_wand": {
       "textures": "textures/items/evoker_wand"
     },
+    "weakness_wand": {
+      "textures": "textures/items/weakness_wand"
+    },
     "teleport_amulet": {
       "textures": "textures/items/teleport_amulet"
     },
@@ -37,6 +40,9 @@
     },
     "stormball": {
       "textures": "textures/items/stormball"
+    },
+    "weaknessball": {
+      "textures": "textures/items/weaknessball"
     },
     "haste_potion": {
       "textures": "textures/items/potion_bottle_digSpeed"

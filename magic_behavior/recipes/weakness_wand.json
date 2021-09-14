@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "magic:weakness_wand"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "YZY",
+      " X",
+      " X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:stick"
+      },
+      "Y": {
+        "item": "minecraft:fermented_spider_eye"
+      },
+      "Z": {
+        "item": "minecraft:lapis_block"
+      }
+    },
+    "result": {
+      "item": "magic:weakness_wand"
+    }
+  }
+}

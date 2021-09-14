@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:weakness_wand",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "weakness_wand",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}
