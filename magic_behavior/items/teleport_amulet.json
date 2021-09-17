@@ -75,7 +75,11 @@
                     {
                         "run_command": {
                             "command": [
-                                "teleport @s ^ ^ ^100 true"
+                                "execute @s ~ ~1 ~ particle magic:teleport_effect ^ ^ ^",
+                                "playsound mob.evocation_illager.cast_spell @s ~ ~ ~ 0.6",
+                                "teleport @s ^ ^ ^100 true",
+                                "execute @s ~ ~1 ~ particle magic:teleport_effect ^ ^ ^",
+                                "playsound mob.evocation_illager.cast_spell @s ~ ~ ~ 0.6"
                             ],
                             "target": "holder"
                         }
