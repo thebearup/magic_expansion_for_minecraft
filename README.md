@@ -27,16 +27,20 @@ This is a simple add-on for Minecraft. It adds some magical elements to the game
 # Installation
 1. Download the latest addon from the [releases page](https://github.com/thebearup/magic_expansion_for_minecraft/releases)
 2. Follow the instructions based on your platform
-  - [Windows 10/Android/iPad](https://www.minecraft.net/en-us/addons)
-    - The easiest way
-  - [Xbox](https://youtu.be/754amkN3dok?t=15)
-    - Basically download via the Edge browser and install with [MC Addons Manager](https://www.microsoft.com/en-us/p/mc-addons-manager/9p8r42ntgllt?activetab=pivot:overviewtab)
-  - [PS4](https://www.youtube.com/watch?v=BoDSPuH4x_U&ab_channel=AntonyandHarryGames)
-    - Push the addon to a world/realm via a supported platform, then connect from your PS4.
-  - [Switch](https://gaming.stackexchange.com/questions/384024/how-can-i-add-add-ons-to-my-game-on-the-nintendo-switch)
-    - Fairly convoluted - can use the PS4 method instead.
+    - [Windows 10/Android/iPad](https://www.minecraft.net/en-us/addons)
+      - The easiest way
+    - [Xbox](https://youtu.be/754amkN3dok?t=15)
+      - Basically download via the Edge browser and install with [MC Addons Manager](https://www.microsoft.com/en-us/p/mc-addons-manager/9p8r42ntgllt?activetab=pivot:overviewtab)
+    - [PS4](https://www.youtube.com/watch?v=BoDSPuH4x_U&ab_channel=AntonyandHarryGames)
+      - Push the addon to a world/realm via a supported platform, then connect from your PS4.
+    - [Switch](https://gaming.stackexchange.com/questions/384024/how-can-i-add-add-ons-to-my-game-on-the-nintendo-switch)
+      - Fairly convoluted - can use the PS4 method instead.
+3. Enable `Holiday Creator Features` and `Custom Biomes` in world settings.
+    - `Holiday Creator Features` will enable all the new equipment.
+    - `Custom Biomes` will enable the **Wizard Tower** but only in chunks you haven't already visited.
+![Alt text](media/menu.png "Options")
 
-
+# New Equipment
 |   |   |
 |---|---|
 |![Alt text](media/flame_recipe.png "Flame wand")|![Alt text](media/flame.png "Flame wand")|
