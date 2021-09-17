@@ -21,10 +21,20 @@ This is a simple add-on for Minecraft. It adds some magical elements to the game
   - **Wizard Tower**: A larger version of the Wizard Outpost with more mobs/traps.
   - Custom mobs to populate the new structures.
 
-  ![Alt text](media/flame.png "Flame wand")
-  ![Alt text](media/freeze.png "Frost wand")
-  ![Alt text](media/lightning.png "Storm wand")
-  ![Alt text](media/dark.png "Dark wand")
-  ![Alt text](media/float.png "Float wand")
-  ![Alt text](media/wizard_outpost.jpg "Wizard Outpost")
-  
+![Alt text](media/logo.png "Logo")
+
+|   |   |
+|---|---|
+|![Alt text](media/flame_recipe.png "Flame wand")|![Alt text](media/flame.png "Flame wand")|
+|![Alt text](media/freeze_recipe.png "Frost wand")|![Alt text](media/freeze.png "Frost wand")|
+|![Alt text](media/lightning_recipe.png "Storm wand")|![Alt text](media/lightning.png "Storm wand")|
+|![Alt text](media/dark_recipe.png "Dark wand")|![Alt text](media/dark.png "Dark wand")|
+|![Alt text](media/float_recipe.png "Float wand")|![Alt text](media/float.png "Float wand")|
+|![Alt text](media/blast_recipe.png "Blast wand")|![Alt text](media/blast.png "Blast wand")|
+|![Alt text](media/evoker_recipe.png "Evoker wand")|![Alt text](media/evoker.png "Evoker wand")|
+|![Alt text](media/weakness_recipe.png "Weakness wand")|![Alt text](media/weakness.png "Weakness wand")|
+
+|   |   |
+|---|---|
+|![Alt text](media/float_a_recipe.png "Float Amulet")|![Alt text](media/teleport_a_recipe.png "Teleport Amulet")|
+|![Alt text](media/haste_recipe.png "Haste Potion")|![Alt text](media/resistance_recipe.png "Resistance Potion")|
