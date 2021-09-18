@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "magic:brew_res_glowstone"
+    },
+    "tags": [
+      "brewing_stand"
+    ],
+    "input": "magic:res_potion",
+    "reagent": "minecraft:glowstone_dust",
+    "output": "magic:res2_potion"
+  }
+}

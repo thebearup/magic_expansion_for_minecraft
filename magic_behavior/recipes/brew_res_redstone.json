@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "magic:brew_res_redstone"
+    },
+    "tags": [
+      "brewing_stand"
+    ],
+    "input": "magic:res_potion",
+    "reagent": "minecraft:redstone",
+    "output": "magic:res_extended_potion"
+  }
+}
