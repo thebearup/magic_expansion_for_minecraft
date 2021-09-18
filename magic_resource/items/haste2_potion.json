@@ -1,0 +1,14 @@
+{
+  "format_version": "1.14",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:haste2_potion"
+    },
+    "components": {
+      "minecraft:icon": "haste_potion",
+      "minecraft:use_animation": "drink",
+      "minecraft:render_offsets": "bottles",
+      "minecraft:display_name": "test"
+    }
+  }
+}

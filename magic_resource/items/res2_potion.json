@@ -1,0 +1,13 @@
+{
+  "format_version": "1.14",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:res2_potion"
+    },
+    "components": {
+      "minecraft:icon": "res_potion",
+      "minecraft:use_animation": "drink",
+      "minecraft:render_offsets": "bottles"
+    }
+  }
+}
