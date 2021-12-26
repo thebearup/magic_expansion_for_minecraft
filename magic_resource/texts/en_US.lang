@@ -16,7 +16,8 @@ item.magic:haste2_potion.name=Potion of Haste 2 (1:30)
 item.magic:res2_potion.name=Potion of Resistance 2 (1:30)
 item.magic:haste_extended_potion.name=Potion of Haste (8:00)
 item.magic:res_extended_potion.name=Potion of Resistance (8:00)
-
+item.magic:homeward_bone.name=Homeward Bone 
+item.magic:hammer.name=Hammer
 entity.flameball.name=Flame Ball
 entity.frostball.name=Frost Ball
 entity.stormball.name=Storm Ball
