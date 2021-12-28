@@ -49,6 +49,15 @@
     },
     "res_potion": {
       "textures": "textures/items/potion_bottle_resistance"
+    },
+    "homeward_bone":{
+      "textures":"textures/items/homeward_bone"
+    },
+    "hammer":{
+      "textures":"textures/items/hammer"
+    },
+    "copper_sword":{
+      "textures":"textures/items/copper_sword"
     }
   }
 }
