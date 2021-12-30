@@ -18,7 +18,6 @@ item.magic:haste_extended_potion.name=Potion of Haste (8:00)
 item.magic:res_extended_potion.name=Potion of Resistance (8:00)
 item.magic:homeward_bone.name=Homeward Bone 
 item.magic:hammer.name=Hammer
-item.magic:copper_sword.name=Copper Sword
 entity.flameball.name=Flame Ball
 entity.frostball.name=Frost Ball
 entity.stormball.name=Storm Ball

@@ -55,9 +55,6 @@
     },
     "hammer":{
       "textures":"textures/items/hammer"
-    },
-    "copper_sword":{
-      "textures":"textures/items/copper_sword"
     }
   }
 }
