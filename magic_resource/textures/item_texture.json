@@ -23,6 +23,9 @@
     "evoker_wand": {
       "textures": "textures/items/evoker_wand"
     },
+    "poison_wand": {
+      "textures": "textures/items/poison_wand"
+    },
     "weakness_wand": {
       "textures": "textures/items/weakness_wand"
     },
@@ -40,6 +43,9 @@
     },
     "stormball": {
       "textures": "textures/items/stormball"
+    },
+    "poisonball": {
+      "textures": "textures/items/poisonsball"
     },
     "weaknessball": {
       "textures": "textures/items/weaknessball"

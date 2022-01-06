@@ -18,7 +18,7 @@
 					"impact_damage": {
 						"damage": 0,
 						"knockback": false,
-						"douse_fire": true,
+						"douse_fire": false,
 						"semi_random_diff_damage": false
 					},
 					"mob_effect": {

@@ -2,7 +2,7 @@
 	"format_version": "1.12.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "magic:floatball",
+			"identifier": "magic:poisonball",
 			"is_spawnable": false,
 			"is_summonable": false,
 			"is_experimental": false,
@@ -22,11 +22,11 @@
 						"semi_random_diff_damage": false
 					},
 					"mob_effect": {
-						"effect": "levitation",
+						"effect": "fatal_poison",
 						"durationeasy": 100,
 						"durationnormal": 100,
 						"durationhard": 100,
-						"amplifier": 3
+						"amplifier": 2
 					},
 					"particle_on_hit": {
 						"num_particles": 30,
