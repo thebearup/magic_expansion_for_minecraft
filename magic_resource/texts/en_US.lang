@@ -25,3 +25,4 @@ entity.stormball.name=Storm Ball
 entity.darkball.name=Dark Ball
 entity.floatball.name=Float Ball
 entity.blastball.name=Blast Ball
+entity.magic:corrupted_golem.name=Corrupted Golem
