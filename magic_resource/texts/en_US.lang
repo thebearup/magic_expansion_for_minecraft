@@ -2,6 +2,7 @@
 
 tile.magic:turret_flame.name=Flame Turret
 tile.magic:turret_frost.name=Frost Turret
+tile.magic:turret_crossbow.name=Crossbow Turret
 
 item.magic:fire_wand.name=Flame Wand
 item.magic:ice_wand.name=Frost Wand
@@ -24,6 +25,7 @@ item.magic:homeward_bone.name=Homeward Bone
 item.magic:hammer.name=Hammer
 item.magic:turret_flame_spawner.name=Flame Turret
 item.magic:turret_frost_spawner.name=Frost Turret
+item.magic:turret_crossbow_spawner.name=Crossbow Turret
 entity.flameball.name=Flame Ball
 entity.frostball.name=Frost Ball
 entity.stormball.name=Storm Ball

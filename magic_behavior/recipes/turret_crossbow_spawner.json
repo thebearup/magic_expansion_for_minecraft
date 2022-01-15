@@ -1,0 +1,30 @@
+{
+    "format_version": 1.12,
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "magic:turret_crossbow_spawner"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " Z",
+            " X",
+            "XYX"
+        ],
+        "key": {
+            "X": {
+                "item": "minecraft:copper_block"
+            },
+            "Y": {
+                "item": "minecraft:redstone_block"
+            },
+            "Z": {
+                "item": "minecraft:crossbow"
+            }
+        },
+        "result": {
+            "item": "magic:turret_crossbow_spawner"
+        }
+    }
+}

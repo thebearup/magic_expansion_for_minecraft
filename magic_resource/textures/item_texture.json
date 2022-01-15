@@ -67,6 +67,9 @@
     },
     "turret_frost_spawner": {
       "textures": "textures/items/turret_frost_spawner"
+    },
+    "turret_crossbow_spawner": {
+      "textures": "textures/items/turret_crossbow_spawner"
     }
   }
 }
