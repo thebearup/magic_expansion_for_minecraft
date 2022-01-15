@@ -1,0 +1,9 @@
+{
+    "format_version": "1.16.0",
+        "magic:turret_flame": {
+            "sound": "metal"
+        },
+        "magic:turret_frost": {
+            "sound": "metal"
+        }
+}

@@ -1,5 +1,8 @@
 ##Addon by thebearup
 
+tile.magic:turret_flame.name=Flame Turret
+tile.magic:turret_frost.name=Frost Turret
+
 item.magic:fire_wand.name=Flame Wand
 item.magic:ice_wand.name=Frost Wand
 item.magic:storm_wand.name=Storm Wand
@@ -26,3 +29,5 @@ entity.darkball.name=Dark Ball
 entity.floatball.name=Float Ball
 entity.blastball.name=Blast Ball
 entity.magic:corrupted_golem.name=Corrupted Golem
+entity.magic:turret_flame=Flame Turret
+entity.magic:turret_frost=Frost Turret
