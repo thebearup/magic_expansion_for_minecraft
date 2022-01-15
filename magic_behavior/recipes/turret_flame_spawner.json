@@ -1,0 +1,30 @@
+{
+    "format_version": 1.12,
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "magic:turret_flame_spawner"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " Z",
+            " X",
+            "XYX"
+        ],
+        "key": {
+            "X": {
+                "item": "minecraft:obsidian"
+            },
+            "Y": {
+                "item": "minecraft:redstone_block"
+            },
+            "Z": {
+                "item": "magic:fire_wand"
+            }
+        },
+        "result": {
+            "item": "magic:turret_flame_spawner"
+        }
+    }
+}

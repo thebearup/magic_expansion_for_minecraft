@@ -28,7 +28,7 @@
             "minecraft:geometry": "geometry.turret",
 			"minecraft:material_instances": {
 				"*": {
-                    "texture": "turret_obsidian",
+                    "texture": "turret_obsidian_flame",
 					"render_method": "alpha_test"
 				}
 			},

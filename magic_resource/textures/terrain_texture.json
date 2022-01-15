@@ -4,8 +4,11 @@
     "padding": 8,
     "num_mip_levels": 4,
     "texture_data": {
-      "turret_obsidian": {
-        "textures": "textures/blocks/turret_obsidian"
+      "turret_obsidian_flame": {
+        "textures": "textures/blocks/turret_obsidian_flame"
+      },
+      "turret_obsidian_frost": {
+        "textures": "textures/blocks/turret_obsidian_frost"
       },
       "turret_copper": {
         "textures": "textures/blocks/turret_copper"

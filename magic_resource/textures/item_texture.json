@@ -61,6 +61,12 @@
     },
     "hammer":{
       "textures":"textures/items/hammer"
+    },
+    "turret_flame_spawner": {
+      "textures": "textures/items/turret_flame_spawner"
+    },
+    "turret_frost_spawner": {
+      "textures": "textures/items/turret_frost_spawner"
     }
   }
 }
