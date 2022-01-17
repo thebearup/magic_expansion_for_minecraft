@@ -1,0 +1,34 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "greater_enchant_dialog",
+                "npc_name": "Greater Enchanter",
+                "text": "I can apply high-level enchantments to your in-hand equipment in exchange for 8 EXP levels.\nProtection 3\nSharpness 3\nLooting 2\nUnbreaking 2\nEfficiency 3\nAdditional options:\nSilk Touch (2 levels)\nFortune2 (4 levels)",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Enchant?",
+                        "commands": [
+                            "/execute @initiator ~ ~ ~ function greaterenchant"
+                        ]
+                    },
+                    {
+                        "name": "Silk Touch?",
+                        "commands": [
+                            "/execute @initiator ~ ~ ~ function silktouchenchant"
+                        ]
+                    },
+                    {
+                        "name": "Fortune 2?",
+                        "commands": [
+                            "/execute @initiator ~ ~ ~ function fortune2enchant"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

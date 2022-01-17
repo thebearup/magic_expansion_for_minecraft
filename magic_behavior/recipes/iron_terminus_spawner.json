@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "magic:iron_terminus_spawner"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "",
+        " Y",
+        "XXX"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:iron_block"
+        },
+        "Y":{
+          "item": "minecraft:ender_eye"
+        }
+      },
+      "result": {
+        "item": "magic:iron_terminus_spawner"
+      }
+    }
+  }

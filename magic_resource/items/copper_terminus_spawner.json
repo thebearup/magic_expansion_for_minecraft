@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:copper_terminus_spawner",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "copper_terminus_spawner",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

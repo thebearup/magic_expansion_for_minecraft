@@ -1,0 +1,61 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "teleport_terminus_main",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Copper",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_copper"
+                        ]
+                    },
+                    {
+                        "name": "Iron",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_iron"
+                        ]
+                    },
+                    {
+                        "name": "More...",
+                        "commands": [
+                            "dialogue open @e[family=npc,c=1] @initiator teleport_terminus_more"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "teleport_terminus_more",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Gold",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_gold"
+                        ]
+                    },
+                    {
+                        "name": "Emerald",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_emerald"
+                        ]
+                    },
+                    {
+                        "name": "Diamond",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_diamond"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

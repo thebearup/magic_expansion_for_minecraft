@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "arcane_enchant_dialog",
+                "npc_name": "Arcane Enchanter",
+                "text": "I can apply arcane enchantments to your in-hand equipment in exchange for 16 EXP levels:\nAqua affinity 1\nRespiration 2\nFeather falling 3\nDepth strider 2\nThorns 2\nMending 1",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Enchant?",
+                        "commands": [
+                            "/execute @initiator ~ ~ ~ function arcaneenchant"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

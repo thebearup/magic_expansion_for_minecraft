@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "magic:npc_book",
+      "materials": {
+        "default": "npc"
+      },
+      "textures": {
+				 "default": "textures/entity/npc_book"
+      },
+      "geometry": {
+        "default": "geometry.npc_book"
+      },
+			"scripts": {
+        "animate": [
+          "general",
+          { "move": "query.modified_move_speed" },
+          "look_at_target",
+          { "baby_transform": "query.is_baby" }
+        ]
+      },
+      "animations": {
+        "general": "animation.npc.general",
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.npc.move",
+        "baby_transform": "animation.npc.baby_transform"
+      },
+      "render_controllers": [ "controller.render.npc_book" ]
+    }
+  }
+}

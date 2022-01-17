@@ -1,9 +1,54 @@
 {
     "format_version": "1.16.0",
+    "magic:lesser_enchanting_table": {
+        "textures": {
+            "up": "lesser_enchanting_table_top",
+            "down": "lesser_enchanting_table_bottom",
+            "side": "lesser_enchanting_table_side"
+            },
+          "sound": "stone"
+        },
+        "magic:greater_enchanting_table": {
+          "textures": {
+              "up": "greater_enchanting_table_top",
+              "down": "greater_enchanting_table_bottom",
+              "side": "greater_enchanting_table_side"
+              },
+            "sound": "stone"
+        },
+        "magic:arcane_enchanting_table": {
+          "textures": {
+              "up": "arcane_enchanting_table_top",
+              "down": "arcane_enchanting_table_bottom",
+              "side": "arcane_enchanting_table_side"
+              },
+            "sound": "stone"
+        },
+        "magic:locator": {
+            "sound": "stone"
+          },
+        "magic:copper_terminus": {
+            "sound": "metal"
+        },
+        "magic:iron_terminus": {
+          "sound": "metal"
+        },
+        "magic:gold_terminus": {
+          "sound": "metal"
+        },
+        "magic:emerald_terminus": {
+          "sound": "metal"
+        },
+        "magic:diamond_terminus": {
+          "sound": "metal"
+        },
         "magic:turret_flame": {
             "sound": "metal"
         },
         "magic:turret_frost": {
+            "sound": "metal"
+        },
+        "magicLturret_crossbow": {
             "sound": "metal"
         }
 }

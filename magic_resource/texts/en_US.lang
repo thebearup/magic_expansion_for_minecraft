@@ -1,5 +1,14 @@
 ##Addon by thebearup
 
+tile.magic:lesser_enchanting_table.name=Lesser Enchanting Table
+tile.magic:greater_enchanting_table.name=Greater Enchanting Table
+tile.magic:arcane_enchanting_table.name=Arcane Enchanting Table
+tile.magic:locator.name=Arcane Locator
+tile.magic:copper_terminus.name=Copper Terminus
+tile.magic:iron_terminus.name=Iron Terminus
+tile.magic:gold_terminus.name=Gold Terminus
+tile.magic:emerald_terminus.name=Emerald Terminus
+tile.magic:diamond_terminus.name=Diamond Terminus
 tile.magic:turret_flame.name=Flame Turret
 tile.magic:turret_frost.name=Frost Turret
 tile.magic:turret_crossbow.name=Crossbow Turret
@@ -26,6 +35,19 @@ item.magic:hammer.name=Hammer
 item.magic:turret_flame_spawner.name=Flame Turret
 item.magic:turret_frost_spawner.name=Frost Turret
 item.magic:turret_crossbow_spawner.name=Crossbow Turret
+item.magic:boring_wand.name=Boring Wand
+item.magic:lesser_enchanting_spawner.name=Lesser Enchanting Table
+item.magic:greater_enchanting_spawner.name=Greater Enchanting Table
+item.magic:arcane_enchanting_spawner.name=Arcane Enchanting Table
+item.magic:enchanted_totem.name=Enchanted Totem
+item.magic:seeing_stone.name=Seeing Stone
+item.magic:copper_terminus_spawner.name=Copper Terminus
+item.magic:iron_terminus_spawner.name=Iron Terminus
+item.magic:gold_terminus_spawner.name=Gold Terminus
+item.magic:emerald_terminus_spawner.name=Emerald Terminus
+item.magic:diamond_terminus_spawner.name=Diamond Terminus
+item.magic:locator_spawner.name=Arcane Locator
+
 entity.flameball.name=Flame Ball
 entity.frostball.name=Frost Ball
 entity.stormball.name=Storm Ball
@@ -35,3 +57,5 @@ entity.blastball.name=Blast Ball
 entity.magic:corrupted_golem.name=Corrupted Golem
 entity.magic:turret_flame=Flame Turret
 entity.magic:turret_frost=Frost Turret
+entity.magic:npc_eye_green.name=Ender Eye NPC
+entity.magic:npc_eye_red.name=Seeing Stone NPC

@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "magic:copper_terminus_spawner"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "",
+        " Y",
+        "XXX"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:copper_block"
+        },
+        "Y":{
+          "item": "minecraft:ender_eye"
+        }
+      },
+      "result": {
+        "item": "magic:copper_terminus_spawner"
+      }
+    }
+  }

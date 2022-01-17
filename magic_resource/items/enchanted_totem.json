@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:enchanted_totem",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "enchanted_totem",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

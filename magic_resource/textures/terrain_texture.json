@@ -12,6 +12,51 @@
       },
       "turret_copper": {
         "textures": "textures/blocks/turret_copper"
+      },
+      "lesser_enchanting_table_top": {
+        "textures": "textures/blocks/lesser_enchanting_table_top"
+      },
+      "lesser_enchanting_table_bottom":{
+        "textures": "textures/blocks/lesser_enchanting_table_bottom"
+      },
+      "lesser_enchanting_table_side":{
+        "textures": "textures/blocks/lesser_enchanting_table_side"
+      },
+      "greater_enchanting_table_top": {
+        "textures": "textures/blocks/greater_enchanting_table_top"
+      },
+      "greater_enchanting_table_bottom":{
+        "textures": "textures/blocks/greater_enchanting_table_bottom"
+      },
+      "greater_enchanting_table_side":{
+        "textures": "textures/blocks/greater_enchanting_table_side"
+      },
+      "arcane_enchanting_table_top": {
+        "textures": "textures/blocks/arcane_enchanting_table_top"
+      },
+      "arcane_enchanting_table_bottom":{
+        "textures": "textures/blocks/arcane_enchanting_table_bottom"
+      },
+      "arcane_enchanting_table_side":{
+        "textures": "textures/blocks/arcane_enchanting_table_side"
+      },
+      "locator": {
+        "textures": "textures/blocks/locator"
+      },
+      "copper_terminus_new": {
+        "textures": "textures/blocks/copper_terminus_new"
+      },
+      "iron_terminus_new": {
+        "textures": "textures/blocks/iron_terminus_new"
+      },
+      "gold_terminus_new": {
+        "textures": "textures/blocks/gold_terminus_new"
+      },
+      "emerald_terminus_new": {
+        "textures": "textures/blocks/emerald_terminus_new"
+      },
+      "diamond_terminus_new": {
+        "textures": "textures/blocks/diamond_terminus_new"
       }
     }
   }

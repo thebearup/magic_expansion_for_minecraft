@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "magic:enchanted_totem"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "",
+        "XYX",
+        " X"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:deepslate"
+        },
+        "Y":{
+          "item": "minecraft:lapis_block"
+        }
+      },
+      "result": {
+        "item": "magic:enchanted_totem"
+      }
+    }
+  }

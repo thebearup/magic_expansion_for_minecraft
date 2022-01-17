@@ -1,0 +1,30 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "magic:locator_spawner"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "",
+        "ZYZ",
+        "XXX"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:crying_obsidian"
+        },
+        "Y":{
+          "item": "magic:seeing_stone"
+        },
+        "Z":{
+          "item": "minecraft:blaze_powder"
+        }
+      },
+      "result": {
+        "item": "magic:locator_spawner"
+      }
+    }
+  }

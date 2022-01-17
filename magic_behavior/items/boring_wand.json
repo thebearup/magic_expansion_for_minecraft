@@ -1,0 +1,94 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "magic:boring_wand",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "boring_wand"
+            },
+            "minecraft:display_name": {},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:hand_equipped": true,
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": true,
+            "minecraft:render_offsets": "tools",
+            "minecraft:enchantable": {
+                "value": 10,
+                "slot": "shears"
+            },
+            "minecraft:durability": {
+                "max_durability": 120,
+                "damage_chance": {
+                    "min": 90,
+                    "max": 100
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "magic:boring_wand",
+                            "minecraft:diamond"
+                        ],
+                        "repair_amount": 60
+                    }
+                ]
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "bore",
+                    "target": "self"
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "boring_wand",
+                "duration": 1.0
+            },
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "yes:damage_event",
+                    "target": "self"
+                }
+            },
+            "minecraft:mining_speed": 1,
+            "minecraft:damage": 3,
+            "minecraft:can_destroy_in_creative": false
+        },
+        "events": {
+            "bore": {
+                "sequence": [
+                    {
+                        "damage": {
+                            "type": "durability",
+                            "amount": 1,
+                            "target": "self"
+                        }
+                    },
+                    {
+                        "swing": {}
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "execute @s ~ ~ ~ function easy_clear",
+                                "playsound mob.evocation_illager.cast_spell @s ~ ~ ~ 0.6"
+                            ],
+                            "target": "holder"
+                        }
+                    }
+                ]
+            },
+            "yes:damage_event": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 1
+                }
+            }
+        }
+    }
+}

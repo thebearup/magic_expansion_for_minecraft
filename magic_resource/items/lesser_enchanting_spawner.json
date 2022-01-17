@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:lesser_enchanting_spawner",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "lesser_enchanting_spawner",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

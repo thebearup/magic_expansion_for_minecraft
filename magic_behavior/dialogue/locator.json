@@ -1,0 +1,129 @@
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "locator_main",
+                "npc_name": "Locator",
+                "text": "Which realm are you navigating?",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Overworld",
+                        "commands": [
+                            "dialogue open @e[family=npc,c=1] @initiator locator_overworld1"
+                        ]
+                    },
+                    {
+                        "name": "Nether",
+                        "commands": [
+                            "dialogue open @e[family=npc,c=1] @initiator locator_nether"
+                        ]
+                    },
+                    {
+                        "name": "The End",
+                        "commands": [
+                            "dialogue open @e[family=npc,c=1] @initiator locator_other"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "locator_overworld1",
+                "npc_name": "Locator",
+                "text": "What would you like to find?",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Mineshaft",
+                        "commands": [
+                            "structure load mystructure:locatormineshaft ~ 255 ~"
+                        ]
+                    },
+                    {
+                        "name": "Treasure",
+                        "commands": [
+                            "structure load mystructure:locatortreasure ~ 255 ~"
+                        ]
+                    },
+                    {
+                        "name": "More...",
+                        "commands": [
+                            "dialogue open @e[family=npc,c=1] @initiator locator_overworld2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "locator_overworld2",
+                "npc_name": "Locator",
+                "text": "What would you like to find?",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Temple",
+                        "commands": [
+                            "structure load mystructure:locatortemple ~ 255 ~"
+                        ]
+                    },                    {
+                        "name": "Stronghold",
+                        "commands": [
+                            "structure load mystructure:locatorstronghold ~ 255 ~"
+                        ]
+                    },
+                    {
+                        "name": "Mansion",
+                        "commands": [
+                            "structure load mystructure:locatormansion ~ 255 ~"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "locator_nether",
+                "npc_name": "Locator",
+                "text": "What would you like to find?",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Bastion",
+                        "commands": [
+                            "structure load mystructure:locatorbastion ~ 125 ~"
+                        ]
+                    },
+                    {
+                        "name": "Fortress",
+                        "commands": [
+                            "structure load mystructure:locatorfortress ~ 125 ~"
+                        ]
+                    },
+                    {
+                        "name": "Portal",
+                        "commands": [
+                            "structure load mystructure:locatorportal ~ 125 ~"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "locator_other",
+                "npc_name": "Locator",
+                "text": "What would you like to find?",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "End City",
+                        "commands": [
+                            "structure load mystructure:locatorendcity ~ 125 ~"
+                        ]
+                    }                    
+                ]
+            }
+        ]
+    }
+}

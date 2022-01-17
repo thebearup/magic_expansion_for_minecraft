@@ -70,6 +70,42 @@
     },
     "turret_crossbow_spawner": {
       "textures": "textures/items/turret_crossbow_spawner"
+    },
+    "boring_wand": {
+      "textures": "textures/items/boring_wand"
+    },
+    "enchanted_totem": {
+      "textures": "textures/items/enchanted_totem"
+    },
+    "seeing_stone": {
+      "textures": "textures/items/seeing_stone"
+    },
+    "lesser_enchanting_spawner": {
+      "textures": "textures/items/lesser_enchanting_spawner"
+    },
+    "greater_enchanting_spawner": {
+      "textures": "textures/items/greater_enchanting_spawner"
+    },
+    "arcane_enchanting_spawner": {
+      "textures": "textures/items/arcane_enchanting_spawner"
+    },
+    "copper_terminus_spawner": {
+      "textures": "textures/items/copper_terminus_spawner"
+    },
+    "iron_terminus_spawner": {
+      "textures": "textures/items/iron_terminus_spawner"
+    },
+    "gold_terminus_spawner": {
+      "textures": "textures/items/gold_terminus_spawner"
+    },
+    "emerald_terminus_spawner": {
+      "textures": "textures/items/emerald_terminus_spawner"
+    },
+    "diamond_terminus_spawner": {
+      "textures": "textures/items/diamond_terminus_spawner"
+    },
+    "locator_spawner": {
+      "textures": "textures/items/locator_spawner"
     }
   }
 }

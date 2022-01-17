@@ -1,0 +1,58 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "magic:greater_enchanting_table",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 5,
+            "minecraft:friction": 0.6,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#FFFFFF",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.250,
+            "minecraft:on_interact": {
+                "event": "greater_enchant"
+            },
+            "minecraft:on_placed": {
+                "event": "block_placed",
+                "target": "self"
+            },
+            "minecraft:on_player_destroyed":{
+                "event" : "block_destroyed",
+                "target": "self"
+            }
+        },
+        "events": {
+            "greater_enchant": {
+              "run_command": {
+                  "command": [ 
+                      "playsound random.click @p",
+                      "dialogue open @e[type=magic:npc_book,c=1] @p greater_enchant_dialog"
+                  ]
+              }
+          },
+          "block_placed": {
+              "run_command": {
+                  "command": [
+                      "summon magic:npc_book Enchanter ~ ~1 ~",
+                      "dialogue change @e[type=magic:npc_book,c=1,r=1] greater_enchant_dialog"
+                  ]
+              }
+          },
+          "block_destroyed": {
+              "run_command": {
+                  "command": [
+                      "kill @e[type=magic:npc_book,c=1,r=1]"
+                  ]
+              }
+          }
+        }
+    }
+}
