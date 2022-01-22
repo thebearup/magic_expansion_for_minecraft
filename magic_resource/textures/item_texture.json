@@ -29,6 +29,9 @@
     "weakness_wand": {
       "textures": "textures/items/weakness_wand"
     },
+    "enchanted_teleporter_wand": {
+      "textures": "textures/items/enchanted_teleporter_wand"
+    },
     "teleport_amulet": {
       "textures": "textures/items/teleport_amulet"
     },

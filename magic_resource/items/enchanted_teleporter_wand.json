@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:enchanted_teleporter_wand",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "enchanted_teleporter_wand",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

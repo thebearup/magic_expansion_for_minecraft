@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "magic:enchanted_teleporter_wand"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        " Y",
+        " X",
+        " X"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:stick"
+        },
+        "Y":{
+          "item": "magic:enchanted_totem"
+        }
+      },
+      "result": {
+        "item": "magic:enchanted_teleporter_wand"
+      }
+    }
+  }
