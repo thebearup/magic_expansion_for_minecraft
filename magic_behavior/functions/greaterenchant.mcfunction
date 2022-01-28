@@ -1,4 +1,4 @@
-execute @e[family=npc,c=1] ~ ~ ~ msg @p[lm=0,l=7] Insufficient experience for enchantment
+execute @e[family=npc,c=1] ~ ~ ~ msg @p[lm=0,l=7,c=1,r=3] Insufficient experience for enchantment
 enchant @s[lm=8] protection 3
 enchant @s[lm=8] sharpness 3
 enchant @s[lm=8] looting 2

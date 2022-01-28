@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:lesser_exp_bottle",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "lesser_exp_bottle",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

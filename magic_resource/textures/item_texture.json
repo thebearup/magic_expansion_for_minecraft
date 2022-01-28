@@ -38,6 +38,9 @@
     "float_amulet": {
       "textures": "textures/items/float_amulet"
     },
+    "lesser_exp_bottle": {
+      "textures": "textures/items/lesser_exp_bottle"
+    },
     "flameball": {
       "textures": "textures/items/flameball"
     },
