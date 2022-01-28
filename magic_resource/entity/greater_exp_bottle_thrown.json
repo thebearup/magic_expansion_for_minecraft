@@ -2,12 +2,12 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "magic:lesser_exp_bottle_thrown",
+      "identifier": "magic:greater_exp_bottle_thrown",
       "materials": {
         "default": "snowball"
       },
       "textures": {
-        "default": "textures/items/lesser_exp_bottle"
+        "default": "textures/items/greater_exp_bottle"
       },
       "geometry": {
         "default": "geometry.fireball"

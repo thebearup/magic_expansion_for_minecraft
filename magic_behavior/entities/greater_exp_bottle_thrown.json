@@ -2,7 +2,7 @@
     "format_version": "1.12.0",
     "minecraft:entity": {
       "description": {
-        "identifier": "magic:lesser_exp_bottle_thrown",
+        "identifier": "magic:greater_exp_bottle_thrown",
         "is_spawnable": false,
         "is_summonable": true,
         "is_experimental": false,
@@ -17,8 +17,8 @@
         "minecraft:projectile": {
          "on_hit": {
           "grant_xp": {
-            "minXP": 100,
-            "maxXP": 100
+            "minXP": 500,
+            "maxXP": 500
           },
           "remove_on_hit": { }
          },
