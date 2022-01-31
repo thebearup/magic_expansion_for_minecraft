@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "magic:pylon_spd",
+      "materials": {
+        "default": "ender_crystal"
+      },
+      "textures": {
+        "default": "textures/entity/pylon_spd"
+      },
+      "geometry": {
+        "default": "geometry.pylon_entity"
+      },
+      "animations": {
+        "move": "animation.pylon_entity.move"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.time_offset = Math.random(0, 100000);"
+        ],
+        "animate": [
+          "move"
+        ]
+      },
+      "render_controllers": [ "controller.render.pylon_entity" ]
+    }
+  }
+} 

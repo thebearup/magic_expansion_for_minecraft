@@ -1,0 +1,30 @@
+{
+    "format_version": 1.12,
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "magic:pylon_off_spawner"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " Y",
+            "YZY",
+            "XXX"
+        ],
+        "key": {
+            "X": {
+                "item": "minecraft:obsidian"
+            },
+            "Y": {
+                "item": "minecraft:glass"
+            },
+            "Z": {
+                "item": "minecraft:blaze_powder"
+            }
+        },
+        "result": {
+            "item": "magic:pylon_off_spawner"
+        }
+    }
+}

@@ -13,6 +13,15 @@
       "turret_copper": {
         "textures": "textures/blocks/turret_copper"
       },
+      "pylon_offense": {
+        "textures": "textures/blocks/pylon_offense"
+      },
+      "pylon_defense": {
+        "textures": "textures/blocks/pylon_defense"
+      },
+      "pylon_speed": {
+        "textures": "textures/blocks/pylon_speed"
+      },
       "lesser_enchanting_table_top": {
         "textures": "textures/blocks/lesser_enchanting_table_top"
       },

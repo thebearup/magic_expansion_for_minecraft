@@ -1,0 +1,78 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "magic:pylon_offense",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 5,
+            "minecraft:friction": 0.6,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#FFFFFF",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.750,
+            "minecraft:geometry": "geometry.teleporter_pad",
+			"minecraft:material_instances": {
+				"*": {
+                    "texture": "pylon_offense",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [0, 10],
+				"on_tick": {
+					"event": "give_buffs",
+					"target": "self"
+				}
+			},
+            "minecraft:on_placed": {
+                "event": "block_placed",
+                "target": "self"
+            },
+            "minecraft:on_player_destroyed":{
+                "event" : "block_destroyed",
+                "target": "self"
+            },
+			"minecraft:pick_collision": {
+				"origin": [	-8,	0,-8],
+				"size": [16, 16, 16]
+			},
+			"minecraft:entity_collision": {
+				"origin": [	-8,	0, -8],
+				"size": [ 16, 2, 16	]
+			}
+        },
+        "events": {
+            "block_placed": {
+                "run_command": {
+                    "command": [
+                        "summon magic:pylon_off Shrine ~ ~1 ~"
+                    ]
+                }
+            },
+            "block_destroyed": {
+                "run_command": {
+                    "command": [
+                        "kill @e[type=magic:pylon_off,c=1,r=1]"
+                    ]
+                }
+            },
+            "give_buffs": {
+                "run_command": {
+                    "command": [
+                        "particle minecraft:totem_particle ~ ~1 ~",
+                        "effect @a[r=10] strength 10",
+                        "effect @a[r=10] resistance 10"
+                    ]
+                }
+            }
+        }
+    }
+}

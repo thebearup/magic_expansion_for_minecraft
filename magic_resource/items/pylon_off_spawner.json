@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:pylon_off_spawner",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pylon_off_spawner",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}
