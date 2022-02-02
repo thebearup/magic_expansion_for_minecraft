@@ -3,6 +3,7 @@
 
 This is a simple add-on for Minecraft. It adds some magical elements to the game...
 ## Implemented
+### Wands
 - **Flame wand**: Causes `catch_fire` on hit.
 - **Storm wand**: Summons a `lightning_bolt` on hit.
 - **Frost wand**: Inflict `slow` effect on the target
@@ -14,15 +15,51 @@ This is a simple add-on for Minecraft. It adds some magical elements to the game
 - **Float wand**: Target gains `levitation` for 10 seconds.
 - **Evoker wand**: Summons a row of 'evoker fangs' in front of the player.
 - **Blast wand**: Creates a TNT-like explosion upon hit.
-- **Teleport Amulet**: Teleports the player 100 blocks in the direction they're facing
+- **Poison wand**: Inflicts `fatal_poison` on the target
+- **Weakness wand**: Inflicts `weakness` on the target
+- **Teleport wand**: Teleports the target entity to the nearest enchanting table.
+    - Makes it easier to transport mobs.
+    - Should nametag the entity first, so it doesn't despawn.
+- **Boring Wand**: Clears a 3x2x5 space in front of the player. Removes most common blocks (stone, gravel, netherrack, etc).
+### Items
 - **Float Amulet**: Grants `levitation` for 5 seconds and `slow_falling` for 8 seconds.
+- **Teleport Amulet**: Teleports the player 100 blocks in the direction they're facing
 - **Resistance Potion**: Grants `resistance` effect
 - **Haste Potion**: Grants `haste` effect
+- **Seeing Stone**: Locates Ruined Portals and Nether Fortresses.
+    - Crafting ingredient for the **Arcane Locator**.
+- **Enchanted Totem**: Teleports to nearest enchanting table.
+    - Resembles homeward bone from Dark Souls.
+- **Experience Bottles**: More potent variants of the `xp_bottle`.
+
+### Blocks
+- **Terminus**: Teleport between locations.
+    - 5 craftable types (Copper, Iron, Gold, Emerald, and Diamond).
+    - Automatically adds/removes ticking area when placed/removed. **Limit of 10 ticking areas in Bedrock worlds**.
+- **Lesser Enchanting Table**: Grants low-level enchantments for 4XP levels.
+    - Also grants Silk Touch and Fortune 1
+- **Greater Enchanting Table**: Grants high-level enchantments for 8XP levels.
+    - Also grants Silk Touch and Fortune 2
+- **Arcane Enchanting Table**: Grants additional enchantments for 16XP levels.
+    - Also can exchange experience levels for **experience bottles**.
+- **Arcane Locator**: Gives the coordinates of various structures
+    - This will temporarily generate command blocks at the world ceiling, but should be minimally disruptive.
+    - For some reason the output of the `locate` command is suppressed when called from an item event or NPC. Hence the hacky command-block implementation.
+- **Turrets**: Attack nearby mobs iwth ranged attacks
+    - Based on snow golem
+    - Variants include Crossbow, Flame, and Frost
+- **Shrines**: Provide buffs in a range around the block.
+    - Variants include Health, Combat, and Agility.
+
+### Structures/Mobs
 - **Wizard Outpost**: A structure that spawns in Mesa biomes. Contains mobs and loot used to craft wands.
+- **Corrupted Golem**: An aggressive, more dangerous variant of the Iron Golem.
+    - Currently does not spawn in any biome/structure.
+
 ## Planned
-- **Teleporters**: Would like to use nametags to link two teleporters and/or teleport 1K blocks in a given direction based on block orientation.
 - **Wizard Tower**: A larger version of the Wizard Outpost with more mobs/traps.
-- Custom mobs to populate the new structures.
+- **Graveyard**: A small, ground-level structure.
+- **Necromancer**: Resides in Graveyard, summons undead mobs.
 
 # Installation
 1. Download the latest addon from the [releases page](https://github.com/thebearup/magic_expansion_for_minecraft/releases)
@@ -40,7 +77,7 @@ This is a simple add-on for Minecraft. It adds some magical elements to the game
     - `Custom Biomes` will enable the **Wizard Tower** but only in chunks you haven't already visited.
 ![Alt text](media/menu.png "Options")
 
-# New Equipment
+# Recipes/Examples
 |   |   |
 |---|---|
 |![Alt text](media/flame_recipe.png "Flame wand")|![Alt text](media/flame.png "Flame wand")|
@@ -51,8 +88,23 @@ This is a simple add-on for Minecraft. It adds some magical elements to the game
 |![Alt text](media/blast_recipe.png "Blast wand")|![Alt text](media/blast.png "Blast wand")|
 |![Alt text](media/evoker_recipe.png "Evoker wand")|![Alt text](media/evoker.png "Evoker wand")|
 |![Alt text](media/weakness_recipe.png "Weakness wand")|![Alt text](media/weakness.png "Weakness wand")|
+|![Alt text](media/poison_recipe.png "Poison wand")|![Alt text](media/poison.png "Poison wand")|
+|![Alt text](media/lesser_enchanting_recipe.png "Lesser Enchanting Table")|![Alt text](media/lesser_enchanting_dialog.png "Lesser Enchanting Table")|
+|![Alt text](media/greater_enchanting_recipe.png "Greater Enchanting Table")|![Alt text](media/greater_enchanting_dialog.png "Greater Enchanting Table")|
+|![Alt text](media/arcane_enchanting_recipe.png "Arcane Enchanting Table")|![Alt text](media/arcane_enchanting_dialog.png "Arcane Enchanting Table")|
+|![Alt text](media/locator_recipe.png "Arcane Locator")|![Alt text](media/locator_dialog.png "Locator Dialog")|
+|![Alt text](media/shrine_healing_recipe.png "Health Shrine")|![Alt text](media/shrine_healing.png "Health Shrine")|
+|![Alt text](media/shrine_combat_recipe.png "Combat Shrine")|![Alt text](media/shrine_combat.png "Combat Shrine")|
+|![Alt text](media/shrine_agility_recipe.png "Agility Shrine")|![Alt text](media/shrine_agility.png "Agility Shrine")|
+|![Alt text](media/copper_terminus_recipe.png "Copper Terminus")|![Alt text](media/terminus_dialog.png "Terminus Dialog")|
+
 
 |   |   |
 |---|---|
+|![Alt text](media/iron_terminus_recipe.png "Iron Terminus")|![Alt text](media/gold_terminus_recipe.png "Gold Terminus")|
+|![Alt text](media/emerald_terminus_recipe.png "Emerald Terminus")|![Alt text](media/diamond_terminus_recipe.png "Diamond Terminus")|
+|![Alt text](media/enchanted_totem_recipe.png "Enchanted Totem")|![Alt text](media/boring_wand_recipe.png "Boring Wand")|
 |![Alt text](media/float_a_recipe.png "Float Amulet")|![Alt text](media/teleport_a_recipe.png "Teleport Amulet")|
 |![Alt text](media/haste_recipe.png "Haste Potion")|![Alt text](media/resistance_recipe.png "Resistance Potion")|
+|![Alt text](media/seeing_stone_recipe.png "Seeing Stone")|![Alt text](media/turret_crossbow_recipe.png "Crossbow Turret")|
+|![Alt text](media/turret_flame_recipe.png "Flame Turret")|![Alt text](media/turret_frost_recipe.png "Frost Turret")|
