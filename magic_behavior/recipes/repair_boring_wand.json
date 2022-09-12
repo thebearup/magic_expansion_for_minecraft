@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "magic:boring_wand_repair"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "magic:boring_wand",
+				"count": 1
+			},
+			{
+				"item": "magic:boring_wand",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "magic:boring_wand"
+		}
+	}
+}
