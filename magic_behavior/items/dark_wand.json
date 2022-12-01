@@ -9,7 +9,9 @@
             "minecraft:icon": {
                 "texture": "dark_wand"
             },
-            "minecraft:display_name": {},
+            "minecraft:display_name": {
+                "value":"Dark Wand"
+            },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
             },

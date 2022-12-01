@@ -9,7 +9,9 @@
             "minecraft:icon": {
                 "texture": "enchanted_teleporter_wand"
             },
-            "minecraft:display_name": {},
+            "minecraft:display_name": {
+                "value":"Teleporter Wand"
+            },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
             },

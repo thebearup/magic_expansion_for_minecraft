@@ -9,7 +9,9 @@
             "minecraft:icon": {
                 "texture": "boring_wand"
             },
-            "minecraft:display_name": {},
+            "minecraft:display_name": {
+                "value":"Boring Wand"
+            },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
             },

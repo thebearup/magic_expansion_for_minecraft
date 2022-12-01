@@ -9,7 +9,9 @@
             "minecraft:icon": {
                 "texture": "storm_wand"
             },
-            "minecraft:display_name": {},
+            "minecraft:display_name": {
+                "value":"Storm Wand"
+            },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
             },

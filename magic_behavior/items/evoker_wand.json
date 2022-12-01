@@ -9,7 +9,9 @@
             "minecraft:icon": {
                 "texture": "evoker_wand"
             },
-            "minecraft:display_name": {},
+            "minecraft:display_name": {
+                "value":"Evoker Wand"
+            },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
             },

@@ -9,7 +9,9 @@
             "minecraft:icon": {
                 "texture": "float_amulet"
             },
-            "minecraft:display_name": {},
+            "minecraft:display_name": {
+                "value":"Float Amulet"
+            },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
             },

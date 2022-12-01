@@ -9,7 +9,9 @@
             "minecraft:icon": {
                 "texture": "poison_wand"
             },
-            "minecraft:display_name": {},
+            "minecraft:display_name": {
+                "value":"Poison Wand"
+            },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
             },
