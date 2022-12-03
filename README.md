@@ -17,25 +17,28 @@ This is a simple add-on for Minecraft. It adds some magical elements to the game
 - **Blast wand**: Creates a TNT-like explosion upon hit.
 - **Poison wand**: Inflicts `fatal_poison` on the target
 - **Weakness wand**: Inflicts `weakness` on the target
-- **Teleport wand**: Teleports the target entity to the nearest enchanting table.
+- **Teleport wand**: Teleports the target entity to the home terminus.
     - Makes it easier to transport mobs.
     - Should nametag the entity first, so it doesn't despawn.
 - **Boring Wand**: Clears a 3x2x5 space in front of the player. Removes most common blocks (stone, gravel, netherrack, etc).
 ### Items
 - **Float Amulet**: Grants `levitation` for 5 seconds and `slow_falling` for 8 seconds.
 - **Teleport Amulet**: Teleports the player 100 blocks in the direction they're facing
+    - Due to a recent Minecraft update that broke teleporting into unrendered chunks, the safety check is disabled. Be careful where you aim :)
 - **Resistance Potion**: Grants `resistance` effect
 - **Haste Potion**: Grants `haste` effect
 - **Seeing Stone**: Locates Ruined Portals and Nether Fortresses.
     - Crafting ingredient for the **Arcane Locator**.
-- **Enchanted Totem**: Teleports to nearest enchanting table.
+- **Enchanted Totem**: Teleports to Home Terminus.
+    - Prior to 1.2, this would teleport the player to an Enchanting table.
     - Resembles homeward bone from Dark Souls.
 - **Experience Bottles**: More potent variants of the `xp_bottle`.
 
 ### Blocks
 - **Terminus**: Teleport between locations.
-    - 5 craftable types (Copper, Iron, Gold, Emerald, and Diamond).
+    - 5 craftable types (Home, Copper, Iron, Gold, and Emerald).
     - Automatically adds/removes ticking area when placed/removed. **Limit of 10 ticking areas in Bedrock worlds**.
+    - As of 1.2.0, the Diamond Terminus is deprecated in favor of the Home Terminus.
 - **Lesser Enchanting Table**: Grants low-level enchantments for 4XP levels.
     - Also grants Silk Touch and Fortune 1
 - **Greater Enchanting Table**: Grants high-level enchantments for 8XP levels.
@@ -102,7 +105,7 @@ This is a simple add-on for Minecraft. It adds some magical elements to the game
 |   |   |
 |---|---|
 |![Alt text](media/iron_terminus_recipe.png "Iron Terminus")|![Alt text](media/gold_terminus_recipe.png "Gold Terminus")|
-|![Alt text](media/emerald_terminus_recipe.png "Emerald Terminus")|![Alt text](media/diamond_terminus_recipe.png "Diamond Terminus")|
+|![Alt text](media/emerald_terminus_recipe.png "Emerald Terminus")|![Alt text](media/home_terminus_recipe.png "Home Terminus")|
 |![Alt text](media/enchanted_totem_recipe.png "Enchanted Totem")|![Alt text](media/boring_wand_recipe.png "Boring Wand")|
 |![Alt text](media/float_a_recipe.png "Float Amulet")|![Alt text](media/teleport_a_recipe.png "Teleport Amulet")|
 |![Alt text](media/haste_recipe.png "Haste Potion")|![Alt text](media/resistance_recipe.png "Resistance Potion")|

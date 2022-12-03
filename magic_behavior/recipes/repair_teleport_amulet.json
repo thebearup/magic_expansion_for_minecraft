@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "magic:teleport_amulet"
+			"identifier": "magic:teleport_amulet_repair"
 		},
 		"tags": [
 			"crafting_table"

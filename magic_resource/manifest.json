@@ -2,23 +2,23 @@
     "format_version": 2,
     "header": {
       "name": "Magic Expansion Behavior Pack",
-      "description": "v1.0.6 - Fix Item Names",
+      "description": "v1.2.2 - Add Home Terminus",
       "uuid": "2ec2f76c-6fae-4595-a523-235b74430bb6",
       "min_engine_version": [1, 13, 0],
-      "version": [1, 0, 6]
+      "version": [1, 2, 2]
     },
     "modules": [
       {
         "description": "Magic Expansion",
         "type": "resources",
         "uuid": "fe6aefea-3c22-46cb-b420-12eb43bc6e5c",
-        "version": [1, 0, 6]
+        "version": [1, 2, 2]
       }
     ],
     "dependencies": [
       {
         "uuid": "5c24b3e2-760c-4843-9ffe-5cbae4c320bb",
-        "version": [1, 0, 6]
+        "version": [1, 2, 2]
       }
     ]
   }

@@ -60,7 +60,7 @@
 			  "run_command": {
 				"command": [
 				    "particle minecraft:totem_particle ~~~",
-					"tp @e[family=mob,c=1,r=1] @e[type=magic:npc_book,c=1,name=Enchanter]"
+					"tp @e[family=mob,c=1,r=1] @e[type=magic:npc_eye_blue,c=1,name=HomeTerminus]"
 				]
 			  }
 			}

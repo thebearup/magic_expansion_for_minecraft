@@ -42,16 +42,14 @@
               "run_command": {
                   "command": [
                       "summon magic:npc_book Enchanter ~ ~1 ~",
-                      "dialogue change @e[type=magic:npc_book,c=1,r=1] lesser_enchant_dialog",
-                      "tickingarea add ~ ~ ~ ~ ~ ~"
+                      "dialogue change @e[type=magic:npc_book,c=1,r=1] lesser_enchant_dialog"
                   ]
               }
           },
           "block_destroyed": {
               "run_command": {
                   "command": [
-                      "kill @e[type=magic:npc_book,c=1,r=1]",
-                      "tickingarea remove ~ ~ ~"
+                      "kill @e[type=magic:npc_book,c=1,r=1]"
                   ]
               }
           }

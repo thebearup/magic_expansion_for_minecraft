@@ -17,7 +17,7 @@
           "item": "minecraft:obsidian"
         },
         "Y":{
-          "item": "minecraft:lapis_block"
+          "item": "magic:enchanted_totem"
         }
       },
       "result": {
