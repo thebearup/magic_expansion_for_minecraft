@@ -2,11 +2,11 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "magic:diamond_terminus_spawner",
+      "identifier": "magic:home_terminus_spawner",
       "category": "Equipment"
     },
     "components": {
-      "minecraft:icon": "diamond_terminus_spawner",
+      "minecraft:icon": "home_terminus_spawner",
       "minecraft:render_offsets": "miscellaneous"
     }
   }

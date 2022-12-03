@@ -52,6 +52,9 @@
       "locator": {
         "textures": "textures/blocks/locator"
       },
+      "home_terminus_new": {
+        "textures": "textures/blocks/home_terminus_new"
+      },
       "copper_terminus_new": {
         "textures": "textures/blocks/copper_terminus_new"
       },

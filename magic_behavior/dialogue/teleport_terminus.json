@@ -3,7 +3,7 @@
     "minecraft:npc_dialogue": {
         "scenes": [
             {
-                "scene_tag": "teleport_terminus_main",
+                "scene_tag": "home_terminus_main",
                 "npc_name": "Terminus",
                 "text": "I can teleport you to a linked Terminus",
                 "on_open_commands": [],
@@ -16,9 +16,30 @@
                         ]
                     },
                     {
-                        "name": "Iron",
+                        "name": "More...",
                         "commands": [
-                            "execute @initiator ~ ~ ~ function teleport_iron"
+                            "dialogue open @e[family=npc,c=1] @initiator teleport_terminus_more"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "teleport_terminus_main",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Home",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_home"
+                        ]
+                    },
+                    {
+                        "name": "Copper",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_copper"
                         ]
                     },
                     {
@@ -43,15 +64,15 @@
                         ]
                     },
                     {
-                        "name": "Emerald",
+                        "name": "Iron",
                         "commands": [
-                            "execute @initiator ~ ~ ~ function teleport_emerald"
+                            "execute @initiator ~ ~ ~ function teleport_iron"
                         ]
                     },
                     {
-                        "name": "Diamond",
+                        "name": "Emerald",
                         "commands": [
-                            "execute @initiator ~ ~ ~ function teleport_diamond"
+                            "execute @initiator ~ ~ ~ function teleport_emerald"
                         ]
                     }
                 ]

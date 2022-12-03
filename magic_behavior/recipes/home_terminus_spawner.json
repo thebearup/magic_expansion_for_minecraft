@@ -2,7 +2,7 @@
     "format_version": "1.12",
     "minecraft:recipe_shaped": {
       "description": {
-      "identifier": "magic:diamond_terminus_spawner"
+      "identifier": "magic:home_terminus_spawner"
       },
   
       
@@ -14,14 +14,14 @@
       ],
       "key": {
         "X": {
-          "item": "minecraft:diamond_block"
+          "item": "minecraft:obsidian"
         },
         "Y":{
-          "item": "minecraft:ender_eye"
+          "item": "minecraft:lapis_block"
         }
       },
       "result": {
-        "item": "magic:diamond_terminus_spawner"
+        "item": "magic:home_terminus_spawner"
       }
     }
   }

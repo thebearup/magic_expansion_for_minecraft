@@ -92,6 +92,9 @@
     "arcane_enchanting_spawner": {
       "textures": "textures/items/arcane_enchanting_spawner"
     },
+    "home_terminus_spawner": {
+      "textures": "textures/items/home_terminus_spawner"
+    },
     "copper_terminus_spawner": {
       "textures": "textures/items/copper_terminus_spawner"
     },
@@ -103,9 +106,6 @@
     },
     "emerald_terminus_spawner": {
       "textures": "textures/items/emerald_terminus_spawner"
-    },
-    "diamond_terminus_spawner": {
-      "textures": "textures/items/diamond_terminus_spawner"
     },
     "locator_spawner": {
       "textures": "textures/items/locator_spawner"

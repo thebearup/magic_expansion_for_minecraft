@@ -79,7 +79,7 @@
                             "command": [
                                 "playsound portal.travel @s ~ ~ ~ 0.6",
                                 "particle minecraft:totem_particle ~ ~1 ~",
-                                "teleport @e[type=magic:npc_book,c=1,name=Enchanter]",
+                                "teleport @e[type=magic:npc_eye_blue,c=1,name=HomeTerminus]",
                                 "playsound portal.travel @s ~ ~ ~ 0.6",
                                 "particle minecraft:totem_particle ~ ~1 ~"
                             ],

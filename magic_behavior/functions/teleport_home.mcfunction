@@ -1,3 +1,3 @@
-teleport @s @e[family=npc,c=1,rm=3,name=CopperTerminus]
+teleport @s @e[family=npc,c=1,rm=3,name=HomeTerminus]
 playsound portal.travel @s ~ ~ ~ 0.5
 particle minecraft:totem_particle ~ ~1 ~

@@ -27,6 +27,9 @@
         "magic:locator": {
             "sound": "stone"
           },
+        "magic:home_terminus": {
+          "sound": "stone"
+        },
         "magic:copper_terminus": {
             "sound": "metal"
         },
