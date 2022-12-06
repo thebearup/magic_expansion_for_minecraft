@@ -69,6 +69,12 @@
       },
       "diamond_terminus_new": {
         "textures": "textures/blocks/diamond_terminus_new"
+      },
+      "headstone": {
+        "textures": "textures/blocks/headstone"
+      },
+      "headstone_cross": {
+        "textures": "textures/blocks/headstone_cross"
       }
     }
   }

@@ -53,5 +53,11 @@
         },
         "magicLturret_crossbow": {
             "sound": "metal"
+        },
+        "magic:headstone": {
+          "sound": "stone"
+        },
+        "magic:headstone_cross": {
+          "sound": "stone"
         }
 }
