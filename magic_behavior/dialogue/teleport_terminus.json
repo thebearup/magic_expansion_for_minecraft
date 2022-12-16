@@ -18,13 +18,40 @@
                     {
                         "name": "More...",
                         "commands": [
-                            "dialogue open @e[family=npc,c=1] @initiator teleport_terminus_more"
+                            "dialogue open @e[family=npc,c=1] @initiator home_terminus_more"
                         ]
                     }
                 ]
             },
             {
-                "scene_tag": "teleport_terminus_main",
+                "scene_tag": "copper_terminus_main",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Home",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_home"
+                        ]
+                    },
+                    {
+                        "name": "Copper",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_copper_2"
+                        ]
+                    },
+                    {
+                        "name": "More...",
+                        "commands": [
+                            "dialogue open @e[family=npc,c=1] @initiator home_terminus_more"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "iron_terminus_main",
                 "npc_name": "Terminus",
                 "text": "I can teleport you to a linked Terminus",
                 "on_open_commands": [],
@@ -45,13 +72,67 @@
                     {
                         "name": "More...",
                         "commands": [
-                            "dialogue open @e[family=npc,c=1] @initiator teleport_terminus_more"
+                            "dialogue open @e[family=npc,c=1] @initiator iron_terminus_more"
                         ]
                     }
                 ]
             },
             {
-                "scene_tag": "teleport_terminus_more",
+                "scene_tag": "gold_terminus_main",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Home",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_home"
+                        ]
+                    },
+                    {
+                        "name": "Copper",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_copper"
+                        ]
+                    },
+                    {
+                        "name": "More...",
+                        "commands": [
+                            "dialogue open @e[family=npc,c=1] @initiator gold_terminus_more"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "emerald_terminus_main",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Home",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_home"
+                        ]
+                    },
+                    {
+                        "name": "Copper",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_copper"
+                        ]
+                    },
+                    {
+                        "name": "More...",
+                        "commands": [
+                            "dialogue open @e[family=npc,c=1] @initiator emerald_terminus_more"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "home_terminus_more",
                 "npc_name": "Terminus",
                 "text": "I can teleport you to a linked Terminus",
                 "on_open_commands": [],
@@ -73,6 +154,87 @@
                         "name": "Emerald",
                         "commands": [
                             "execute @initiator ~ ~ ~ function teleport_emerald"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "iron_terminus_more",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Gold",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_gold"
+                        ]
+                    },
+                    {
+                        "name": "Iron",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_iron_2"
+                        ]
+                    },
+                    {
+                        "name": "Emerald",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_emerald"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "gold_terminus_more",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Gold",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_gold_2"
+                        ]
+                    },
+                    {
+                        "name": "Iron",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_iron"
+                        ]
+                    },
+                    {
+                        "name": "Emerald",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_emerald"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "emerald_terminus_more",
+                "npc_name": "Terminus",
+                "text": "I can teleport you to a linked Terminus",
+                "on_open_commands": [],
+                "on_close_commands": [],
+                "buttons": [
+                    {
+                        "name": "Gold",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_gold"
+                        ]
+                    },
+                    {
+                        "name": "Iron",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_iron"
+                        ]
+                    },
+                    {
+                        "name": "Emerald",
+                        "commands": [
+                            "execute @initiator ~ ~ ~ function teleport_emerald_2"
                         ]
                     }
                 ]
