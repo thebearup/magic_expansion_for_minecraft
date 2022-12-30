@@ -132,8 +132,28 @@
         "attack_interval_max": 3,
         "attack_radius": 15
       },
+      "minecraft:behavior.tempt":{
+        "priority": 1,
+        "can_get_scared": false,
+        "can_tempt_vertically": false,
+        "can_tempt_while_ridden": true,
+        "speed_multiplier": 1.3,
+        "within_radius": 8.0,
+        "items":["magic:necronomicon"]
+      },
       "minecraft:behavior.hurt_by_target": {
-        "priority": 1
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "iron_golem"},
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "player"}
+              ]
+            },
+            "max_dist": 16
+          }
+        ]
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 2,
