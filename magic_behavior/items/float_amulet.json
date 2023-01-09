@@ -75,6 +75,16 @@
                         "swing": {}
                     },
                     {
+                        "condition": "query.is_sneaking",
+                        "run_command": {
+                            "command": [
+                                "effect @s slow_falling 5 3 true"
+                            ],
+                            "target": "holder"
+                        }
+                    },
+                    {
+                        "condition": "!query.is_sneaking",
                         "run_command": {
                             "command": [
                                 "effect @s levitation 5 3 true",

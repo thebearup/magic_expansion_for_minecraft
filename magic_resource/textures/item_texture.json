@@ -41,6 +41,9 @@
     "float_amulet": {
       "textures": "textures/items/float_amulet"
     },
+    "storm_amulet": {
+      "textures": "textures/items/storm_amulet"
+    },
     "greater_exp_bottle": {
       "textures": "textures/items/greater_exp_bottle"
     },
