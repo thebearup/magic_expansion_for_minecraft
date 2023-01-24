@@ -2,119 +2,77 @@
   "resource_pack_name": "vanilla",
   "texture_name": "atlas.items",
   "texture_data": {
-    "necronomicon": {
-      "textures": "textures/items/necronomicon"
-    },
-    "fire_wand": {
-      "textures": "textures/items/fire_wand"
-    },
-    "ice_wand": {
-      "textures": "textures/items/ice_wand"
-    },
-    "storm_wand": {
-      "textures": "textures/items/storm_wand"
-    },
-    "dark_wand": {
-      "textures": "textures/items/dark_wand"
-    },
-    "float_wand": {
-      "textures": "textures/items/float_wand"
+    "arcane_enchanting_spawner": {
+      "textures": "textures/items/arcane_enchanting_spawner"
     },
     "blast_wand": {
       "textures": "textures/items/blast_wand"
     },
-    "evoker_wand": {
-      "textures": "textures/items/evoker_wand"
-    },
-    "poison_wand": {
-      "textures": "textures/items/poison_wand"
-    },
-    "weakness_wand": {
-      "textures": "textures/items/weakness_wand"
-    },
-    "enchanted_teleporter_wand": {
-      "textures": "textures/items/enchanted_teleporter_wand"
-    },
-    "teleport_amulet": {
-      "textures": "textures/items/teleport_amulet"
-    },
-    "float_amulet": {
-      "textures": "textures/items/float_amulet"
-    },
-    "storm_amulet": {
-      "textures": "textures/items/storm_amulet"
-    },
-    "greater_exp_bottle": {
-      "textures": "textures/items/greater_exp_bottle"
-    },
-    "lesser_exp_bottle": {
-      "textures": "textures/items/lesser_exp_bottle"
-    },
-    "flameball": {
-      "textures": "textures/items/flameball"
-    },
-    "frostball": {
-      "textures": "textures/items/frostball"
-    },
-    "stormball": {
-      "textures": "textures/items/stormball"
-    },
-    "poisonball": {
-      "textures": "textures/items/poisonsball"
-    },
-    "weaknessball": {
-      "textures": "textures/items/weaknessball"
-    },
-    "haste_potion": {
-      "textures": "textures/items/potion_bottle_digSpeed"
-    },
-    "res_potion": {
-      "textures": "textures/items/potion_bottle_resistance"
-    },
-    "turret_flame_spawner": {
-      "textures": "textures/items/turret_flame_spawner"
-    },
-    "turret_frost_spawner": {
-      "textures": "textures/items/turret_frost_spawner"
-    },
-    "turret_crossbow_spawner": {
-      "textures": "textures/items/turret_crossbow_spawner"
-    },
     "boring_wand": {
       "textures": "textures/items/boring_wand"
-    },
-    "enchanted_totem": {
-      "textures": "textures/items/enchanted_totem"
-    },
-    "seeing_stone": {
-      "textures": "textures/items/seeing_stone"
-    },
-    "lesser_enchanting_spawner": {
-      "textures": "textures/items/lesser_enchanting_spawner"
-    },
-    "greater_enchanting_spawner": {
-      "textures": "textures/items/greater_enchanting_spawner"
-    },
-    "arcane_enchanting_spawner": {
-      "textures": "textures/items/arcane_enchanting_spawner"
-    },
-    "home_terminus_spawner": {
-      "textures": "textures/items/home_terminus_spawner"
     },
     "copper_terminus_spawner": {
       "textures": "textures/items/copper_terminus_spawner"
     },
-    "iron_terminus_spawner": {
-      "textures": "textures/items/iron_terminus_spawner"
-    },
-    "gold_terminus_spawner": {
-      "textures": "textures/items/gold_terminus_spawner"
+    "dark_wand": {
+      "textures": "textures/items/dark_wand"
     },
     "emerald_terminus_spawner": {
       "textures": "textures/items/emerald_terminus_spawner"
     },
+    "enchanted_teleporter_wand": {
+      "textures": "textures/items/enchanted_teleporter_wand"
+    },
+    "enchanted_totem": {
+      "textures": "textures/items/enchanted_totem"
+    },
+    "evoker_wand": {
+      "textures": "textures/items/evoker_wand"
+    },
+    "fire_wand": {
+      "textures": "textures/items/fire_wand"
+    },
+    "float_amulet": {
+      "textures": "textures/items/float_amulet"
+    },
+    "float_wand": {
+      "textures": "textures/items/float_wand"
+    },
+    "gold_terminus_spawner": {
+      "textures": "textures/items/gold_terminus_spawner"
+    },
+    "greater_enchanting_spawner": {
+      "textures": "textures/items/greater_enchanting_spawner"
+    },
+    "greater_exp_bottle": {
+      "textures": "textures/items/greater_exp_bottle"
+    },
+    "haste_potion": {
+      "textures": "textures/items/potion_bottle_digSpeed"
+    },
+    "home_terminus_spawner": {
+      "textures": "textures/items/home_terminus_spawner"
+    },
+    "ice_wand": {
+      "textures": "textures/items/ice_wand"
+    },
+    "iron_terminus_spawner": {
+      "textures": "textures/items/iron_terminus_spawner"
+    },
+    "lesser_enchanting_spawner": {
+      "textures": "textures/items/lesser_enchanting_spawner"
+    },
+    "lesser_exp_bottle": {
+      "textures": "textures/items/lesser_exp_bottle"
+    },
     "locator_spawner": {
       "textures": "textures/items/locator_spawner"
+    },
+    "necronomicon": {
+      "textures": "textures/items/necronomicon"
+    },
+    "poison_wand": {
+      "textures": "textures/items/poison_wand"
     },
     "pylon_def_spawner": {
       "textures": "textures/items/pylon_def_spawner"
@@ -124,6 +82,36 @@
     },
     "pylon_spd_spawner": {
       "textures": "textures/items/pylon_spd_spawner"
+    },
+    "res_potion": {
+      "textures": "textures/items/potion_bottle_resistance"
+    },
+    "sculk_wand": {
+      "textures": "textures/items/sculk_wand"
+    },
+    "seeing_stone": {
+      "textures": "textures/items/seeing_stone"
+    },
+    "storm_amulet": {
+      "textures": "textures/items/storm_amulet"
+    },
+    "storm_wand": {
+      "textures": "textures/items/storm_wand"
+    },
+    "teleport_amulet": {
+      "textures": "textures/items/teleport_amulet"
+    },
+    "turret_crossbow_spawner": {
+      "textures": "textures/items/turret_crossbow_spawner"
+    },
+    "turret_flame_spawner": {
+      "textures": "textures/items/turret_flame_spawner"
+    },
+    "turret_frost_spawner": {
+      "textures": "textures/items/turret_frost_spawner"
+    },
+    "weakness_wand": {
+      "textures": "textures/items/weakness_wand"
     }
   }
 }
