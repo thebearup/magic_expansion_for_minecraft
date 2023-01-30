@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "magic:sculk_wand"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "YZY",
+      " X",
+      " X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:stick"
+      },
+      "Y": {
+        "item": "minecraft:sculk_shrieker"
+      },
+      "Z": {
+        "item": "minecraft:lapis_block"
+      }
+    },
+    "result": {
+      "item": "magic:sculk_wand"
+    }
+  }
+}

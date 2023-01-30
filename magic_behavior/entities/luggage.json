@@ -1,0 +1,144 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "magic:luggage",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+    "component_groups": {
+      "luggage:tame": {
+        "minecraft:is_tamed": {
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 1,
+          "speed_multiplier": 10,
+          "start_distance": 5,
+          "stop_distance": 2
+        }
+      }
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:is_chested": {
+      },
+      "minecraft:type_family": {
+        "family": [ "inanimate" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.35,
+        "height": 0.6
+      },
+      "minecraft:balloonable": {
+        "mass": 0.5
+      },
+      "minecraft:breathable": {
+        "breathes_water": true
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:health": {
+        "value": 20
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_owner",
+										"subject": "other",
+										"value": true
+									}
+								]
+							}
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 1.0
+			},
+      "minecraft:navigation.walk": {
+        "can_float": true,
+        "is_amphibious": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:follow_range": {
+        "value": 1024
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:tameable": {
+        "probability": 1.0,
+        "tame_items": [ "stick"],
+        "tame_event": {
+          "event": "luggage:on_tame",
+          "target": "self"
+        }
+      },
+      "minecraft:jump.static": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+			},
+			"minecraft:inventory": {
+        "container_type": "minecart_chest",
+				"inventory_size": 15
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 8,
+				"target_distance": 3.0,
+				"probability": 0.02
+			},
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      }
+		},
+    "events": {
+      "luggage:on_tame": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "luggage:tame"
+              ]
+            }
+          }
+        ]
+      }
+    }
+	}
+}
