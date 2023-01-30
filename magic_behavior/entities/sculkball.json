@@ -26,9 +26,15 @@
             "on_other_hit": true,
             "particle_type": "explode"
           },
-          "remove_on_hit": {}
+          "remove_on_hit": {},
+          "definition_event": {
+            "event_trigger": {
+              "event": "magic:on_hit",
+              "target": "self"
+            }
+          }
         },
-        "hit_sound": "bow.hit",
+        "hit_sound": "bullet.hit",
         "power": 2.0,
         "gravity": 0.00,
         "inertia": 1,
@@ -59,7 +65,8 @@
       "magic:on_hit": {
         "run_command": {
           "command": [
-            "summon lightning_bolt ~ ~ ~"
+            "effect @e[type=warden,c=1] instant_damage 1 2",
+            "effect @e[type=wither,c=1] instant_health 1 2"
           ]
         }
       }
