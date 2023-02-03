@@ -1,0 +1,139 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 8,
+          "trades": [
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:float_amulet"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:teleport_amulet"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:enchanted_totem"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:home_terminus_spawner"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 18
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:greater_enchanting_spawner"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:arcane_enchanting_spawner"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:seeing_stone"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 64
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:mystic_table_spawner"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 15
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:pylon_def_spawner"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

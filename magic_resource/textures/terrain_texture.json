@@ -70,6 +70,12 @@
       "diamond_terminus_new": {
         "textures": "textures/blocks/diamond_terminus_new"
       },
+      "mystic_top": {
+        "textures": "textures/blocks/mystic_top"
+      },
+      "mystic_side": {
+        "textures": "textures/blocks/mystic_side"
+      },
       "headstone": {
         "textures": "textures/blocks/headstone"
       },

@@ -6,7 +6,7 @@
       },
   
       
-      "tags": [ "crafting_table" ],
+      "tags": [ "crafting_table", "mystic_table" ],
       "pattern": [
         " Y",
         " X",

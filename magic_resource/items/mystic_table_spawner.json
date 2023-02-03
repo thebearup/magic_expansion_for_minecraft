@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:mystic_table_spawner",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "mystic_table_spawner",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

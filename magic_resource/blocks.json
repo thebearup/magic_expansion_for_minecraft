@@ -59,5 +59,13 @@
         },
         "magic:headstone_cross": {
           "sound": "stone"
+        },
+        "magic:mystic_table": {
+          "textures": {
+            "up": "mystic_top",
+            "down": "mystic_top",
+            "side": "mystic_side"
+            },
+          "sound": "metal"
         }
 }

@@ -16,6 +16,21 @@
                                     "test": "has_biome_tag",
                                     "operator": "==",
                                     "value": "mesa"
+                                },
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "desert"
+                                },
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "mountain"
+                                },
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "savanna"
                                 }
                             ]
                         }
@@ -25,7 +40,7 @@
         },
         "distribution": {
             "iterations": 1,
-            "scatter_chance": 0.1,
+            "scatter_chance": 0.3,
             "x": {
                 "distribution": "uniform",
                 "extent": [

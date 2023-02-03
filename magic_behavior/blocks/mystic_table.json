@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "magic:mystic_table",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 5,
+            "minecraft:friction": 0.6,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:material_instances": {
+				"*": {
+                    "texture": "mystic_table",
+					"render_method": "alpha_test"
+				}
+			},
+            "minecraft:map_color": "#FFFFFF",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.250,
+            "minecraft:crafting_table": {
+                "crafting_tags": ["mystic_table"],
+                "table_name": "Mystic Table"
+           }
+        }
+    }
+}

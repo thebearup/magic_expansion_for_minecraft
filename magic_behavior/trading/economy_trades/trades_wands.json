@@ -1,0 +1,139 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 9,
+          "trades": [
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:boring_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:float_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:weakness_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 6
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:evoker_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:fire_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:ice_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:storm_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:poison_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": 99,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:blast_wand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
