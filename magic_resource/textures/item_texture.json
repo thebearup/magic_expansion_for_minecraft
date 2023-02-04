@@ -68,6 +68,9 @@
     "locator_spawner": {
       "textures": "textures/items/locator_spawner"
     },
+    "luggage_spawner": {
+      "textures": "textures/items/luggage_spawner"
+    },
     "mystic_table_spawner": {
       "textures": "textures/items/mystic_table_spawner"
     },
