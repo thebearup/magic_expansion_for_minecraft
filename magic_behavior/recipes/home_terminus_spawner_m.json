@@ -1,12 +1,12 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.18",
     "minecraft:recipe_shaped": {
       "description": {
-      "identifier": "magic:home_terminus_spawner"
+      "identifier": "magic:home_terminus_spawner_m"
       },
   
       
-      "tags": [ "crafting_table" ],
+      "tags": [ "mystic_table" ],
       "pattern": [
         "",
         " Y",

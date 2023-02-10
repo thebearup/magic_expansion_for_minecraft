@@ -20,7 +20,7 @@
             "minecraft:allow_off_hand": true,
             "minecraft:render_offsets": "tools",
             "minecraft:durability": {
-                "max_durability": 1,
+                "max_durability": 0,
                 "damage_chance": {
                     "min": 100,
                     "max": 100

@@ -2,10 +2,10 @@
     "format_version": 1.12,
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "magic:lesser_enchanting_spawner"
+            "identifier": "magic:lesser_enchanting_spawner_m"
         },
         "tags": [
-            "crafting_table"
+            "mystic_table"
         ],
         "pattern": [
             " Z",

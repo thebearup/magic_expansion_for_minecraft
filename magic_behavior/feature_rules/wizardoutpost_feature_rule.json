@@ -40,7 +40,7 @@
         },
         "distribution": {
             "iterations": 1,
-            "scatter_chance": 0.3,
+            "scatter_chance": 0.26,
             "x": {
                 "distribution": "uniform",
                 "extent": [

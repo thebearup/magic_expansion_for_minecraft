@@ -6,7 +6,7 @@
           "num_to_select": 9,
           "trades": [
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -20,7 +20,7 @@
               ]
             },
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -34,7 +34,7 @@
               ]
             },
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -48,7 +48,7 @@
               ]
             },
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -62,7 +62,7 @@
               ]
             },
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -76,7 +76,7 @@
               ]
             },
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -90,7 +90,7 @@
               ]
             },
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -104,7 +104,7 @@
               ]
             },
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -118,7 +118,7 @@
               ]
             },
             {
-              "max_uses": 99,
+              "max_uses": -1,
               "wants": [
                 {
                   "item": "minecraft:emerald",
