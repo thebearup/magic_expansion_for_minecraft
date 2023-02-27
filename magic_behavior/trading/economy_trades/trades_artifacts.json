@@ -3,7 +3,7 @@
     {
       "groups": [
         {
-          "num_to_select": 11,
+          "num_to_select": 12,
           "trades": [
             {
               "max_uses": -1,
@@ -167,6 +167,21 @@
               "gives": [
                 {
                   "item": "magic:storm_amulet"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 12,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:broom_spawner"
                 }
               ]
             }

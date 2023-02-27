@@ -2,8 +2,8 @@
 	"pools": [
 		{
 			"rolls": {
-				"min": 4,
-				"max": 5
+				"min": 1,
+				"max": 1
 			},
 			"entries": [
 				{
@@ -22,7 +22,7 @@
 				},
 				{
 					"type": "item",
-					"name": "minecraft:ender_pearl",
+					"name": "minecraft:diamond",
 					"functions": [
 						{
 							"function": "set_count",
@@ -36,13 +36,35 @@
 				},
 				{
 					"type": "item",
-					"name": "minecraft:amethyst_shard",
+					"name": "minecraft:emerald_block",
 					"functions": [
 						{
 							"function": "set_count",
 							"count": {
-								"min": 7,
-								"max": 9
+								"min": 1,
+								"max": 1
+							}
+						}
+					],
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 1
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:ender_pearl",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
 							}
 						}
 					],
@@ -50,13 +72,13 @@
 				},
 				{
 					"type": "item",
-					"name": "minecraft:emerald_block",
+					"name": "minecraft:amethyst_shard",
 					"functions": [
 						{
 							"function": "set_count",
 							"count": {
-								"min": 1,
-								"max": 2
+								"min": 2,
+								"max": 3
 							}
 						}
 					],
@@ -75,7 +97,15 @@
 						}
 					],
 					"weight": 1
-				},
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 2
+			},
+			"entries": [
 				{
 					"type": "item",
 					"name": "minecraft:rotten_flesh",
@@ -117,20 +147,6 @@
 						}
 					],
 					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "minecraft:diamond",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 2,
-								"max": 4
-							}
-						}
-					],
-					"weight": 1
 				}
 			]
 		}

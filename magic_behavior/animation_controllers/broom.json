@@ -1,0 +1,71 @@
+{
+	"format_version": "1.18.0",
+	"animation_controllers": {
+		"controller.animation.fly_broom": {
+            "initial_state":"no_rider",
+            "states":{
+                "no_rider":{
+                    "transitions":[
+                        {
+                            "rising":"query.is_in_water"
+                        },
+                        {
+                            "falling":"!query.is_in_water"
+                        },
+                        {
+                            "has_rider":"query.has_rider"
+                        }
+                    ]
+                },
+                "has_rider":{
+                    "on_entry":[
+                        "/effect @e[type=magic:broom,r=1,c=1] slow_falling 3600 0 true"
+                    ],
+                    "transitions":[
+                        {
+                            "rising":"query.is_in_water"
+                        },
+                        {
+                            "falling":"!query.is_in_water"
+                        },
+                        {
+                            "no_rider":"!query.has_rider"
+                        }
+                    ]
+                },
+                "falling":{
+                    "on_entry":[
+                        "/effect @e[type=magic:broom,r=1,c=1] levitation 0 0 true"
+                    ],
+                    "transitions":[
+                        {
+                            "rising":"query.is_in_water"
+                        },
+                        {
+                            "has_rider":"query.has_rider"
+                        },
+                        {
+                            "no_rider":"!query.has_rider"
+                        }
+                    ]
+                },
+                "rising":{
+                    "on_entry":[
+                        "/effect @e[type=magic:broom,r=1,c=1] levitation 10 2 true"
+                    ],
+                    "transitions":[
+                        {
+                            "falling":"!query.is_in_water"
+                        },
+                        {
+                            "has_rider":"query.has_rider"
+                        },
+                        {
+                            "no_rider":"!query.has_rider"
+                        }
+                    ]
+                }
+            }
+		}
+	}
+}

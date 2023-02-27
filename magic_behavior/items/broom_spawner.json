@@ -2,15 +2,15 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "magic:float_amulet",
+            "identifier": "magic:broom_spawner",
             "category": "equipment"
         },
         "components": {
             "minecraft:icon": {
-                "texture": "float_amulet"
+                "texture": "broom_spawner"
             },
             "minecraft:display_name": {
-                "value":"Float Amulet"
+                "value":"Magic Broom"
             },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
@@ -19,37 +19,18 @@
             "minecraft:max_stack_size": 1,
             "minecraft:allow_off_hand": true,
             "minecraft:render_offsets": "tools",
-            "minecraft:enchantable": {
-                "value": 10,
-                "slot": "shears"
-            },
             "minecraft:durability": {
-                "max_durability": 120,
+                "max_durability": 0,
                 "damage_chance": {
-                    "min": 90,
+                    "min": 100,
                     "max": 100
                 }
             },
-            "minecraft:repairable": {
-                "repair_items": [
-                    {
-                        "items": [
-                            "magic:float_amulet",
-                            "minecraft:feather"
-                        ],
-                        "repair_amount": 60
-                    }
-                ]
-            },
             "minecraft:on_use": {
                 "on_use": {
-                    "event": "float_user",
+                    "event": "summon_broom",
                     "target": "self"
                 }
-            },
-            "minecraft:cooldown": {
-                "category": "float_amulet",
-                "duration": 1.0
             },
             "minecraft:weapon": {
                 "on_hurt_entity": {
@@ -58,11 +39,10 @@
                 }
             },
             "minecraft:mining_speed": 1,
-            "minecraft:damage": 3,
             "minecraft:can_destroy_in_creative": false
         },
         "events": {
-            "float_user": {
+            "summon_broom": {
                 "sequence": [
                     {
                         "damage": {
@@ -75,32 +55,14 @@
                         "swing": {}
                     },
                     {
-                        "condition": "query.is_sneaking",
                         "run_command": {
                             "command": [
-                                "effect @s levitation 0 0 true",
-                                "effect @s slow_falling 5 3 true"
-                            ],
-                            "target": "holder"
-                        }
-                    },
-                    {
-                        "condition": "!query.is_sneaking",
-                        "run_command": {
-                            "command": [
-                                "effect @s levitation 5 3 true",
-                                "effect @s slow_falling 8 3 true"
+                                "summon magic:broom ~ ~ ~"
                             ],
                             "target": "holder"
                         }
                     }
                 ]
-            },
-            "yes:damage_event": {
-                "damage": {
-                    "type": "durability",
-                    "amount": 1
-                }
             }
         }
     }

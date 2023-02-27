@@ -1,0 +1,16 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "magic:broom",
+			"materials": { "default": "minecart" },
+			"textures": {
+				"default": "textures/entity/broom"
+			},
+			"geometry": {
+				"default": "geometry.broom"
+			},
+			"render_controllers": [ "controller.render.npc_book" ]
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:broom_spawner",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "broom_spawner",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

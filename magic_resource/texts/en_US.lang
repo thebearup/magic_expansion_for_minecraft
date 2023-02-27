@@ -1,5 +1,7 @@
 ##Addon by thebearup
 
+action.hint.exit.magic:broom=Crouch to exit broom
+
 tile.magic:lesser_enchanting_table.name=Lesser Enchanting Table
 tile.magic:greater_enchanting_table.name=Greater Enchanting Table
 tile.magic:arcane_enchanting_table.name=Arcane Enchanting Table
@@ -65,6 +67,7 @@ entity.blastball.name=Blast Ball
 entity.greater_exp_bottle_thrown=Greater Exp Bottle
 entity.lesser_exp_bottle_thrown=Lesser Exp Bottle
 entity.enchanted_teleporter_ball.name=Enchanted Teleporter Ball
+entity.magic:broom.name=Magic Broom
 entity.magic:corrupted_golem.name=Corrupted Golem
 entity.magic:turret_flame=Flame Turret
 entity.magic:turret_frost=Frost Turret

@@ -11,6 +11,9 @@
     "boring_wand": {
       "textures": "textures/items/boring_wand"
     },
+    "broom_spawner": {
+      "textures": "textures/items/broom_spawner"
+    },
     "copper_terminus_spawner": {
       "textures": "textures/items/copper_terminus_spawner"
     },
