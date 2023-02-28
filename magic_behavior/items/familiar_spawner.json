@@ -2,12 +2,12 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "magic:broom_spawner",
+            "identifier": "magic:familiar_spawner",
             "category": "equipment"
         },
         "components": {
             "minecraft:icon": {
-                "texture": "broom_spawner"
+                "texture": "familiar_spawner"
             },
             "minecraft:render_offsets": {
                 "main_hand": {
@@ -22,16 +22,16 @@
                  }
             },
             "minecraft:display_name": {
-                "value":"Magic Broom"
+                "value":"Familiar"
             },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.equipment"
             },
             "minecraft:hand_equipped": true,
-            "minecraft:max_stack_size": 1,
+            "minecraft:max_stack_size": 16,
             "minecraft:allow_off_hand": true,
             "minecraft:entity_placer": {
-                "entity": "magic:broom"
+                "entity": "magic:familiar"
             },
             "minecraft:can_destroy_in_creative": false
         }

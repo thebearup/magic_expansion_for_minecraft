@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:familiar_spawner",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "familiar_spawner",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

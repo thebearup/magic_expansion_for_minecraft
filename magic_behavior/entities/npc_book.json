@@ -62,16 +62,6 @@
       },
       "minecraft:physics": {
       }
-    },
-    "events": {
-      "arcane_enchant": {
-          "run_command": {
-              "command": [
-                  "playsound random.click @p",
-                  "dialogue open @e[type=magic:npc_book,c=1] @p no_enchant_dialog"
-              ]
-          }
-      }
     }
   }
 }

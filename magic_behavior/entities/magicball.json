@@ -66,11 +66,11 @@
       "magic:on_hit": {
         "run_command": {
           "command": [
-            "effect @e[type=!player,c=2,r=4] slowness 5 1",
-            "effect @e[type=!player,c=2,r=4] weakness 5 1",
-            "effect @e[family=undead,c=2,r=4] instant_health 1 0",
-            "effect @e[family=!undead,type=!player,c=2,r=4] instant_damage 1 0",
-            "effect @e[type=witch,c=2,r=4] instant_damage 1 2"
+            "effect @e[type=!player,c=2,r=1] slowness 5 1",
+            "effect @e[type=!player,c=2,r=1] weakness 5 1",
+            "effect @e[family=undead,c=2,r=1] instant_health 1 1",
+            "effect @e[family=!undead,type=!player,c=2,r=1] instant_damage 1 1",
+            "effect @e[type=witch,c=2,r=1] instant_damage 1 2"
           ]
         }
       }

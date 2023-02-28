@@ -1,42 +1,73 @@
 {
-	"format_version": "1.16.0",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "magic:familiar",
-			"is_spawnable": true,
-			"is_summonable": true,
-			"is_experimental": false,
+  "format_version": "1.18.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "magic:familiar",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
       "runtime_identifier": "minecraft:allay"
-		},
+    },
     "component_groups": {
-      "pickup_item_delay": {
-        "minecraft:timer": {
-          "looping": false,
-          "time": 3,
-          "time_down_event": {
-            "event": "pickup_item_delay_complete"
-          }
-        }
-      },
-      "pickup_item": {
-        "minecraft:behavior.pickup_items": {
+      "familiar:tame": {
+        "minecraft:is_tamed": {},
+        "minecraft:behavior.follow_owner": {
+          "priority": 1,
+          "speed_multiplier": 8,
+          "start_distance": 5,
+          "stop_distance": 2,
+          "can_teleport": true
+        },
+        "minecraft:follow_range": {
+          "value": 1024
+        },
+        "minecraft:behavior.float": {
+          "priority": 7
+        },
+        "minecraft:behavior.random_hover": {
+          "priority": 9,
+          "xz_dist": 8,
+          "y_dist": 8,
+          "y_offset": -1,
+          "interval": 1,
+          "hover_height": [
+            1,
+            4
+          ]
+        },
+        "minecraft:behavior.ranged_attack": {
           "priority": 2,
-          "max_dist": 32,
-          "search_height": 32,
-          "goal_radius": 2.2,
-          "speed_multiplier": 6,
-          "pickup_based_on_chance": false,
-          "can_pickup_any_item": false,
-          "can_pickup_to_hand_or_equipment": false,
-          "pickup_same_items_as_in_hand": true
+          "speed_multiplier": 1.25,
+          "attack_interval": 1,
+          "attack_radius": 10
+        },
+        "minecraft:shooter": {
+          "def": "magic:magicball"
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "within_default": 6
+            }
+          ],
+          "must_reach": true
         }
       }
     },
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
+      "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
-        "family": [ "allay", "mob" ]
+        "family": [
+          "allay",
+          "mob",
+          "player"
+        ]
       },
       "minecraft:collision_box": {
         "width": 0.35,
@@ -45,11 +76,32 @@
       "minecraft:balloonable": {
         "mass": 0.5
       },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/familiar.json"
+      },
       "minecraft:breathable": {
         "totalSupply": 15,
         "suffocateTime": 0
       },
-      "minecraft:nameable": {
+      "minecraft:nameable": {},
+      "minecraft:tameable": {
+        "probability": 1.0,
+        "tame_items": [
+          "amethyst_shard"
+        ],
+        "tame_event": {
+          "event": "familiar:on_tame",
+          "target": "self"
+        }
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 2,
+        "speed_multiplier": 1.0,
+        "within_radius": 16,
+        "can_get_scared": true,
+        "items": [
+          "amethyst_shard"
+        ]
       },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -57,7 +109,7 @@
         "max_distance": 10.0
       },
       "minecraft:health": {
-        "value": 20
+        "value": 60
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -73,180 +125,88 @@
           }
         ]
       },
-			"minecraft:damage_sensor": {
-				"triggers": [
-					{
-						"on_damage": {
-							"filters": {
-								"all_of": [
-									{
-										"test": "is_family",
-										"subject": "other",
-										"value": "player"
-									},
-									{
-										"test": "is_owner",
-										"subject": "other",
-										"value": true
-									}
-								]
-							}
-						},
-						"deals_damage": false
-					}
-				]
-			},
-			"minecraft:movement": {
-				"value": 0.1
-			},
-			"minecraft:flying_speed": {
-				"value": 0.1
-			},
-			"minecraft:navigation.hover": {
-				"can_path_over_water": true,
-				"can_sink": false,
-				"can_pass_doors": false,
-				"can_path_from_air": true,
-				"avoid_water": true,
-				"avoid_damage_blocks": true,
-				"avoid_sun": false
-			},
-      "minecraft:movement.hover": {},
-      "minecraft:follow_range": {
-        "value": 1024
-      },
-      "minecraft:ambient_sound_interval": {
-        "value": 5.0,
-        "range": 5.0,
-        "event_name": "ambient",
-        "event_names": [
+      "minecraft:damage_sensor": {
+        "triggers": [
           {
-            "event_name": "ambient.tame",
-            "condition": "query.is_using_item"
-          },
-          {
-            "event_name": "ambient",
-            "condition": "!query.is_using_item"
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "value": true
+                  }
+                ]
+              }
+            },
+            "deals_damage": true,
+            "damage_modifier": 100
           }
         ]
       },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:flying_speed": {
+        "value": 0.1
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_pass_doors": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_sun": false
+      },
+      "minecraft:movement.hover": {},
       "minecraft:jump.static": {},
-			"minecraft:can_fly": {},
-			"minecraft:physics": {
-				"has_gravity": false
-			},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
-			"minecraft:vibration_listener": {},
-			"minecraft:conditional_bandwidth_optimization": {
-			},
+      "minecraft:can_fly": {},
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:vibration_listener": {},
+      "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:game_event_movement_tracking": {
         "emit_flap": true
       },
-			"minecraft:inventory": {
-				"inventory_size": 1
-			},
-			"minecraft:interact": {
-				"interactions": [
-					{
-						"on_interact": {
-							"filters": {
-								"all_of": [
-									{
-										"test": "is_family",
-										"subject": "other",
-										"value": "player"
-									}
-								]
-							}
-						},
-						"give_item": true,
-						"take_item": true,
-						"interact_text": "action.interact.allay"
-					}
-				]
-			},
-      "minecraft:behavior.ranged_attack": {
-        "priority": 2,
-        "speed_multiplier": 1.25,
-        "attack_interval": 1,
-        "attack_radius": 10
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "target_distance": 6.0,
+        "probability": 0.02
       },
-      "minecraft:shooter": {
-        "def": "magic:magicball"
-      },
-      "minecraft:behavior.follow_owner": {
-        "priority": 1,
-        "speed_multiplier": 8,
-        "start_distance": 16,
-        "stop_distance": 4,
-        "can_teleport": false,
-        "ignore_vibration": false
-      },
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 2,
-        "entity_types": [
-          {
-            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
-            "within_default": 6
-          }
-        ],
-        "must_reach": true
-      },
-			"minecraft:behavior.float": {
-				"priority": 7
-			},
-			"minecraft:behavior.look_at_player": {
-				"priority": 8,
-				"target_distance": 6.0,
-				"probability": 0.02
-			},
       "minecraft:behavior.random_look_around": {
         "priority": 8
-      },
-      "minecraft:behavior.random_hover": {
-				"priority": 9,
-				"xz_dist": 8,
-				"y_dist": 8,
-				"y_offset": -1,
-				"interval": 1,
-				"hover_height": [ 1, 4 ]
-			}
-		},
+      }
+    },
     "events": {
-      "pickup_item_delay": {
-        "remove": {
-          "component_groups": [
-            "pickup_item"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "pickup_item_delay"
-          ]
-        }
-      },
-      "pickup_item_delay_complete": {
-        "remove": {
-          "component_groups": [
-            "pickup_item_delay"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "pickup_item"
-          ]
-        }
-      },
       "minecraft:entity_spawned": {
-        "add": {
-          "component_groups": [
-            "pickup_item"
+        "run_command": {
+          "command": [
+            "msg @p Give me an Amethyst shard and I will follow you!"
           ]
         }
+      },
+      "familiar:on_tame": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "familiar:tame"
+              ]
+            }
+          }
+        ]
       }
     }
-	}
+  }
 }

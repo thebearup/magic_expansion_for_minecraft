@@ -32,6 +32,9 @@
     "evoker_wand": {
       "textures": "textures/items/evoker_wand"
     },
+    "familiar_spawner": {
+      "textures": "textures/items/familiar_spawner"
+    },
     "fire_wand": {
       "textures": "textures/items/fire_wand"
     },

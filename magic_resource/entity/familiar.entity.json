@@ -7,7 +7,7 @@
 				"default": "allay"
 			},
 			"textures": {
-				"default": "textures/entity/allay/allay"
+				"default": "textures/entity/familiar"
 			},
 			"geometry": {
 				"default": "geometry.allay"
