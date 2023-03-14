@@ -104,6 +104,18 @@
     "seeing_stone": {
       "textures": "textures/items/seeing_stone"
     },
+    "spellsword_boots": {
+      "textures": "textures/items/spellsword_boots"
+    },
+    "spellsword_chest": {
+      "textures": "textures/items/spellsword_chest"
+    },
+    "spellsword_helmet": {
+      "textures": "textures/items/spellsword_helmet"
+    },
+    "spellsword_leggings": {
+      "textures": "textures/items/spellsword_leggings"
+    },
     "storm_amulet": {
       "textures": "textures/items/storm_amulet"
     },
@@ -124,6 +136,18 @@
     },
     "weakness_wand": {
       "textures": "textures/items/weakness_wand"
-    }
+    },
+    "wizard_boots": {
+      "textures": "textures/items/wizard_boots"
+    },
+    "wizard_chest": {
+      "textures": "textures/items/wizard_chest"
+    },
+    "wizard_helmet": {
+      "textures": "textures/items/wizard_helmet"
+    },
+    "wizard_leggings": {
+      "textures": "textures/items/wizard_leggings"
+    },
   }
 }
