@@ -148,6 +148,6 @@
     },
     "wizard_leggings": {
       "textures": "textures/items/wizard_leggings"
-    },
+    }
   }
 }

@@ -199,6 +199,126 @@
                   "item": "magic:familiar_spawner"
                 }
               ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:wizard_helmet"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:wizard_chest"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:wizard_leggings"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:wizard_boots"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:spellsword_helmet"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:spellsword_chest"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:spellsword_leggings"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:spellsword_boots"
+                }
+              ]
             }
           ]
         }
