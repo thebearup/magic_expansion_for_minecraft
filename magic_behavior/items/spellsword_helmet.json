@@ -13,7 +13,7 @@
 				"texture": "spellsword_helmet"
 			},
 			"minecraft:display_name": {
-				"value": "Spellsword Helmet"
+				"value": "Spellsword Helmet §b§o+Saturation"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {

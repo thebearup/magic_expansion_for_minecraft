@@ -13,7 +13,7 @@
 				"texture": "wizard_boots"
 			},
 			"minecraft:display_name": {
-				"value": "Wizard Boots"
+				"value": "Wizard Boots §b§o+Speed"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {

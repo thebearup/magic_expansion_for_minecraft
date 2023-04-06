@@ -13,7 +13,7 @@
 				"texture": "wizard_leggings"
 			},
 			"minecraft:display_name": {
-				"value": "Wizard Leggings"
+				"value": "Wizard Leggings §b§o+Slow Falling"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {

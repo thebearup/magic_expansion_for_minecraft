@@ -14,4 +14,5 @@ effect @a[hasitem={item=magic:wizard_helmet,location=slot.armor.head}] darkness 
 effect @a[hasitem={item=magic:wizard_chest,location=slot.armor.chest}] poison 0 0 true
 effect @a[hasitem={item=magic:wizard_boots,location=slot.armor.feet}] slowness 0 0 true
 
+effect @a[scores={wizard=3}] wither 0 0 true
 effect @a[scores={wizard=4}] wither 0 0 true

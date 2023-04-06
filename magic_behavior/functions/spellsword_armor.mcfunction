@@ -13,5 +13,7 @@ effect @a[hasitem={item=magic:spellsword_boots,location=slot.armor.feet}] jump_b
 effect @a[hasitem={item=magic:spellsword_helmet,location=slot.armor.head}] hunger 0 0 true
 effect @a[hasitem={item=magic:spellsword_leggings,location=slot.armor.legs}] slowness 0 0 true
 
+effect @a[scores={spellsword=3}] strength 11 1 true
+effect @a[scores={spellsword=3}] weakness 0 0 true
 effect @a[scores={spellsword=4}] strength 11 1 true
 effect @a[scores={spellsword=4}] weakness 0 0 true

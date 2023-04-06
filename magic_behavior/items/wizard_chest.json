@@ -13,7 +13,7 @@
 				"texture": "wizard_chest"
 			},
 			"minecraft:display_name": {
-				"value": "Wizard Robe"
+				"value": "Wizard Robe §b§o+Resistance"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
