@@ -21,7 +21,7 @@
 				"slot": "armor_head"
 			},
 			"minecraft:armor": {
-				"protection": 2
+				"protection": 3
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -40,10 +40,10 @@
 				"slot": "slot.armor.head"
 			},
 			"minecraft:durability": {
-				"max_durability": 135
+				"max_durability": 363
 			},
             "minecraft:knockback_resistance": {
-                "protection": 0.06
+                "protection": 0.1
             }
 		}
 	}

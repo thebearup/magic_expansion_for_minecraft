@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magic:invisibility_amulet",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "invisibility_amulet",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

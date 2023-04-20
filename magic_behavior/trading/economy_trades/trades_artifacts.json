@@ -3,7 +3,7 @@
     {
       "groups": [
         {
-          "num_to_select": 21,
+          "num_to_select": 16,
           "trades": [
             {
               "max_uses": -1,
@@ -160,6 +160,36 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
+                  "quantity": 9,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:invisibility_amulet"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 9,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:haste_amulet"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
                   "quantity": 10,
                   "price_multiplier": 0.05
                 }
@@ -167,6 +197,21 @@
               "gives": [
                 {
                   "item": "magic:storm_amulet"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 12,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:fire_resistance_amulet"
                 }
               ]
             },
@@ -205,118 +250,13 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 3,
+                  "quantity": 9,
                   "price_multiplier": 0.05
                 }
               ],
               "gives": [
                 {
-                  "item": "magic:wizard_helmet"
-                }
-              ]
-            },
-            {
-              "max_uses": -1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 3,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "magic:wizard_chest"
-                }
-              ]
-            },
-            {
-              "max_uses": -1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 3,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "magic:wizard_leggings"
-                }
-              ]
-            },
-            {
-              "max_uses": -1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 3,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "magic:wizard_boots"
-                }
-              ]
-            },
-            {
-              "max_uses": -1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 3,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "magic:spellsword_helmet"
-                }
-              ]
-            },
-            {
-              "max_uses": -1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 3,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "magic:spellsword_chest"
-                }
-              ]
-            },
-            {
-              "max_uses": -1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 3,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "magic:spellsword_leggings"
-                }
-              ]
-            },
-            {
-              "max_uses": -1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 3,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "magic:spellsword_boots"
+                  "item": "magic:ruby"
                 }
               ]
             }

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "magic:wool_chest"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "X X",
+      "XXX",
+      "XXX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:black_wool"
+      }
+    },
+    "result": {
+      "item": "magic:wool_chest"
+    }
+  }
+}

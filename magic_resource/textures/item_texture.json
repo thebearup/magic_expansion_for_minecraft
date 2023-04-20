@@ -35,6 +35,9 @@
     "familiar_spawner": {
       "textures": "textures/items/familiar_spawner"
     },
+    "fire_resistance_amulet": {
+      "textures": "textures/items/fire_resistance_amulet"
+    },
     "fire_wand": {
       "textures": "textures/items/fire_wand"
     },
@@ -53,6 +56,9 @@
     "greater_exp_bottle": {
       "textures": "textures/items/greater_exp_bottle"
     },
+    "haste_amulet": {
+      "textures": "textures/items/haste_amulet"
+    },
     "haste_potion": {
       "textures": "textures/items/potion_bottle_digSpeed"
     },
@@ -61,6 +67,9 @@
     },
     "ice_wand": {
       "textures": "textures/items/ice_wand"
+    },
+    "invisibility_amulet": {
+      "textures": "textures/items/invisibility_amulet"
     },
     "iron_terminus_spawner": {
       "textures": "textures/items/iron_terminus_spawner"
@@ -76,6 +85,9 @@
     },
     "luggage_spawner": {
       "textures": "textures/items/luggage_spawner"
+    },
+    "mining_chest": {
+      "textures": "textures/items/mining_chest"
     },
     "mystic_table_spawner": {
       "textures": "textures/items/mystic_table_spawner"
@@ -97,6 +109,9 @@
     },
     "res_potion": {
       "textures": "textures/items/potion_bottle_resistance"
+    },
+    "ruby": {
+      "textures": "textures/items/ruby"
     },
     "sculk_wand": {
       "textures": "textures/items/sculk_wand"
@@ -148,6 +163,18 @@
     },
     "wizard_leggings": {
       "textures": "textures/items/wizard_leggings"
+    },
+    "wool_boots": {
+      "textures": "textures/items/wool_boots"
+    },
+    "wool_chest": {
+      "textures": "textures/items/wool_chest"
+    },
+    "wool_helmet": {
+      "textures": "textures/items/wool_helmet"
+    },
+    "wool_leggings": {
+      "textures": "textures/items/wool_leggings"
     }
   }
 }

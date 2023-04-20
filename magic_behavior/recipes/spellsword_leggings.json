@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "magic:spellsword_leggings"
+    },
+    "tags": [
+      "mystic_table"
+    ],
+    "pattern": [
+      "",
+      " Y",
+      " X"
+    ],
+    "key": {
+      "X": {
+        "item": "magic:ruby"
+      },
+      "Y": {
+        "item": "minecraft:diamond_leggings"
+      }
+    },
+    "result": {
+      "item": "magic:spellsword_leggings"
+    }
+  }
+}

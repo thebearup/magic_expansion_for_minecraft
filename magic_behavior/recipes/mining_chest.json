@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "magic:mining_chest"
+    },
+    "tags": [
+      "mystic_table"
+    ],
+    "pattern": [
+      "X X",
+      "XYX",
+      "XZX"
+    ],
+    "key": {
+      "X": {
+        "item": "magic:ruby"
+      },
+      "Y": {
+        "item": "magic:fire_resistance_amulet"
+      },
+      "Z": {
+        "item": "magic:haste_amulet"
+      }
+    },
+    "result": {
+      "item": "magic:mining_chest"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "magic:wizard_chest"
+    },
+    "tags": [
+      "mystic_table"
+    ],
+    "pattern": [
+      "",
+      " Y",
+      " X"
+    ],
+    "key": {
+      "X": {
+        "item": "magic:ruby"
+      },
+      "Y": {
+        "item": "magic:wool_chest"
+      }
+    },
+    "result": {
+      "item": "magic:wizard_chest"
+    }
+  }
+}
