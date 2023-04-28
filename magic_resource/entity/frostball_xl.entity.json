@@ -1,0 +1,34 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "magic:frostball",
+			"materials": {
+				"default": "fireball"
+			},
+			"textures": {
+				"default": "textures/items/frostball"
+			},
+			"geometry": {
+				"default": "geometry.fireball"
+			},
+			"animations": {
+				"face_player": "animation.actor.billboard",
+				"trail": "controller.animation.arrow_trail"
+			},
+			"scripts": {
+				"scale": "0.9",
+				"animate": [
+					"face_player",
+					"trail"
+				]
+			},
+			"render_controllers": [
+				"controller.render.fireball"
+			],
+			"particle_effects": {
+				"particle": "minecraft:falling_dust_top_snow_particle"
+			}
+		}
+	}
+}
