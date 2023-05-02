@@ -68,8 +68,7 @@
                 "run_command": {
                     "command": [
                         "particle minecraft:totem_particle ~ ~1 ~",
-                        "effect @a[r=10] regeneration 10",
-                        "effect @a[r=10] absorption 10"
+                        "effect @a[r=10] regeneration 10 1 true"
                     ]
                 }
             }

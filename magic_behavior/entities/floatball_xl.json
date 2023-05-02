@@ -23,9 +23,9 @@
 					},
 					"mob_effect": {
 						"effect": "levitation",
-						"durationeasy": 200,
-						"durationnormal": 200,
-						"durationhard": 200,
+						"durationeasy": 150,
+						"durationnormal": 150,
+						"durationhard": 150,
 						"amplifier": 6
 					},
 					"particle_on_hit": {

@@ -64,9 +64,19 @@
                         "swing": {}
                     },
                     {
+                        "condition": "(!query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') && !query.is_item_name_any('slot.armor.head', 0, 'magic:spellsword_helmet')) || (!query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') && !query.is_item_name_any('slot.armor.chest', 0, 'magic:spellsword_chest')) || (!query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') && !query.is_item_name_any('slot.armor.legs', 0, 'magic:spelsword_leggings')) || (!query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots') && !query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots'))",
                         "run_command": {
                             "command": [
                                 "effect @s fire_resistance 60 0 true"
+                            ],
+                            "target": "holder"
+                        }
+                    },
+                    {
+                        "condition": "(query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') || query.is_item_name_any('slot.armor.head', 0, 'magic:spellsword_helmet')) && (query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') || query.is_item_name_any('slot.armor.chest', 0, 'magic:spellsword_chest')) && (query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') || query.is_item_name_any('slot.armor.legs', 0, 'magic:spelsword_leggings')) && (query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots') || query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots'))",
+                        "run_command": {
+                            "command": [
+                                "effect @s fire_resistance 300 0 true"
                             ],
                             "target": "holder"
                         }

@@ -70,6 +70,15 @@
                             ],
                             "target": "holder"
                         }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') && query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') && query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') && query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots')",
+                        "run_command": {
+                            "command": [
+                                "damage @e[family=monster,r=25] 15"
+                            ],
+                            "target": "holder"
+                        }
                     }
                 ]
             },

@@ -76,6 +76,21 @@
                             ],
                             "target": "holder"
                         }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') && query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') && query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') && query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots')",
+                        "run_command": {
+                            "command": [
+                                "playsound mob.blaze.death @s ~ ~ ~ 0.3",
+                                "summon magic:skeleton_minion ^1 ^1 ^5",
+                                "particle minecraft:soul_particle ^1 ^ ^5",
+                                "summon magic:skeleton_minion ^0 ^1 ^5",
+                                "particle minecraft:soul_particle ^0 ^ ^5",
+                                "summon magic:skeleton_minion ^-1 ^1 ^5",
+                                "particle minecraft:soul_particle ^-1 ^ ^5"
+                            ],
+                            "target": "holder"
+                        }
                     }
                 ]
             },

@@ -62,6 +62,20 @@
             "minecraft:can_destroy_in_creative": false
         },
         "events": {
+            "shoot_xl": {
+                "shoot": {
+                    "projectile": "magic:stormball_xl",
+                    "launch_power": 1,
+                    "angle_offset": 0
+                }
+            },
+            "shoot_s": {
+                "shoot": {
+                    "projectile": "magic:stormball",
+                    "launch_power": 1,
+                    "angle_offset": 0
+                }
+            },
             "shoot_stormball": {
                 "sequence": [
                     {
@@ -75,10 +89,12 @@
                         "swing": {}
                     },
                     {
-                        "shoot": {
-                            "projectile": "magic:stormball",
-                            "launch_power": 1
-                        }
+                        "condition": "(query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') || query.is_item_name_any('slot.armor.head', 0, 'magic:spellsword_helmet')) && (query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') || query.is_item_name_any('slot.armor.chest', 0, 'magic:spellsword_chest')) && (query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') || query.is_item_name_any('slot.armor.legs', 0, 'magic:spelsword_leggings')) && (query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots') || query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots'))",
+                        "trigger": "shoot_xl"
+                    },
+                    {
+                        "condition": "(!query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') && !query.is_item_name_any('slot.armor.head', 0, 'magic:spellsword_helmet')) || (!query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') && !query.is_item_name_any('slot.armor.chest', 0, 'magic:spellsword_chest')) || (!query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') && !query.is_item_name_any('slot.armor.legs', 0, 'magic:spelsword_leggings')) || (!query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots') && !query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots'))",
+                        "trigger": "shoot_s"
                     },
                     {
                         "run_command": {

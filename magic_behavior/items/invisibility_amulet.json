@@ -73,10 +73,19 @@
                         }
                     },
                     {
-                        "condition": "!query.is_sneaking",
+                        "condition": "!query.is_sneaking && !query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') || !query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') || !query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') || !query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots')",
                         "run_command": {
                             "command": [
                                 "effect @s invisibility 30 0 true"
+                            ],
+                            "target": "holder"
+                        }
+                    },
+                    {
+                        "condition": "!query.is_sneaking && query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') && query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') && query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') && query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots')",
+                        "run_command": {
+                            "command": [
+                                "effect @s invisibility 300 0 true"
                             ],
                             "target": "holder"
                         }
