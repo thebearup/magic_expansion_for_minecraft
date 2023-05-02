@@ -2,23 +2,23 @@
   "format_version": 2,
   "header": {
     "name": "Magic Expansion Behavior Pack",
-    "description": "v2.1.5 - Buff Wizard Robe/Wands",
+    "description": "v2.1.6 - Buff Wizard Robe/Wands",
     "uuid": "5c24b3e2-760c-4843-9ffe-5cbae4c320bb",
     "min_engine_version": [1, 13, 0],
-    "version": [2, 1, 5]
+    "version": [2, 1, 6]
   },
   "modules": [
     {
       "description": "Magic Expansion",
       "type": "data",
       "uuid": "fe6aefea-3c22-46cb-b420-12eb43bc6e5c",
-      "version": [2, 1, 5]
+      "version": [2, 1, 6]
     }
   ],
   "dependencies": [
     {
       "uuid": "2ec2f76c-6fae-4595-a523-235b74430bb6",
-      "version": [2, 1, 5]
+      "version": [2, 1, 6]
     }
   ]
 }
