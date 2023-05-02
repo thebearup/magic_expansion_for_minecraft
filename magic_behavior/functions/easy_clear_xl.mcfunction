@@ -1,0 +1,10 @@
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace stone
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace gravel
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace tuff
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace deepslate
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace lava
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace dirt
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace blackstone
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace netherrack
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace grass
+fill ^-2 ^1 ^1 ^2 ^3 ^9 air 0 replace soul_sand
