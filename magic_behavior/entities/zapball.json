@@ -1,0 +1,80 @@
+{
+  "format_version": "1.18.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "magic:zapball",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.31,
+        "height": 0.31
+      },
+      "minecraft:type_family": {
+        "family": [ "zap" ]
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 8,
+            "knockback": false,
+            "semi_random_diff_damage": false
+          },
+          "particle_on_hit": {
+            "num_particles": 5,
+            "on_entity_hit": true,
+            "on_other_hit": true,
+            "particle_type": "explode"
+          },
+          "definition_event": {
+            "event_trigger": {
+              "affect_projectile": true,
+              "event": "magic:on_hit",
+              "target": "self"
+            }
+          }
+        },
+        "hit_sound": "bullet.hit",
+        "knockback": false,
+        "is_dangerous": false,
+        "power": 1.0,
+        "gravity": 0.00,
+        "inertia": 1,
+        "liquid_inertia": 1,
+        "multiple_targets": true,
+        "anchor": 2,
+        "offset": [
+          0,
+          0.5,
+          0
+        ],
+        "semi_random_diff_damage": true,
+        "reflect_on_hurt": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+    "events": {
+      "magic:on_hit": {
+        "run_command": {
+          "command": [
+            "effect @e[type=!player,c=2,r=1] slowness 2 1"
+          ]
+        }
+      }
+    }
+  }
+}

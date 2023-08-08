@@ -11,7 +11,7 @@ scoreboard objectives add spellsword_helm dummy
 scoreboard players add @a[hasitem={item=magic:spellsword_helmet,location=slot.armor.head}] spellsword_helm 1
 
 # Grant bonuses based on equipped armor
-effect @a[scores={spellsword_helm=400}] saturation 1 1 true
+effect @a[scores={spellsword_helm=300}] saturation 1 1 true
 effect @a[hasitem={item=magic:spellsword_chest,location=slot.armor.chest}] health_boost 11 2 true
 effect @a[hasitem={item=magic:spellsword_leggings,location=slot.armor.legs}] speed 11 1 true
 effect @a[hasitem={item=magic:spellsword_boots,location=slot.armor.feet}] jump_boost 11 1 true
@@ -27,4 +27,4 @@ effect @a[scores={spellsword=4}] strength 11 1 true
 effect @a[scores={spellsword=4}] weakness 0 0 true
 
 # Reset counter for spellsword_helmet
-scoreboard players set @a[scores={spellsword_helm=400..}] spellsword_helm 0
+scoreboard players set @a[scores={spellsword_helm=300..}] spellsword_helm 0

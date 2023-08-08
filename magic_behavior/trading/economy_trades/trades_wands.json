@@ -3,7 +3,7 @@
     {
       "groups": [
         {
-          "num_to_select": 9,
+          "num_to_select": 10,
           "trades": [
             {
               "max_uses": -1,
@@ -137,6 +137,21 @@
               "gives": [
                 {
                   "item": "magic:blast_wand"
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 10,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "magic:zap_wand"
                 }
               ]
             }

@@ -44,6 +44,9 @@
     "float_amulet": {
       "textures": "textures/items/float_amulet"
     },
+    "float_amulet_2": {
+      "textures": "textures/items/float_amulet_2"
+    },
     "float_wand": {
       "textures": "textures/items/float_wand"
     },
@@ -175,6 +178,9 @@
     },
     "wool_leggings": {
       "textures": "textures/items/wool_leggings"
+    },
+    "zap_wand": {
+      "textures": "textures/items/zap_wand"
     }
   }
 }
