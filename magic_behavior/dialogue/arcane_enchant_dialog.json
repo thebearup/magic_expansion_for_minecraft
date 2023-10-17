@@ -12,19 +12,19 @@
                     {
                         "name": "Enchant?",
                         "commands": [
-                            "/execute @initiator ~ ~ ~ function arcaneenchant"
+                            "/execute as @initiator run function arcaneenchant"
                         ]
                     },
                     {
                         "name": "Blue XP Bottle?",
                         "commands": [
-                            "/execute @initiator ~ ~ ~ function lesser_exp_bottle"
+                            "/execute as @initiator run function lesser_exp_bottle"
                         ]
                     },
                     {
                         "name": "Red XP Bottle?",
                         "commands": [
-                            "/execute @initiator ~ ~ ~ function greater_exp_bottle"
+                            "/execute as @initiator run function greater_exp_bottle"
                         ]
                     }
                 ]

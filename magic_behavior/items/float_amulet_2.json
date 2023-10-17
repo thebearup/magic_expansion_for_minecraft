@@ -24,10 +24,10 @@
                 "slot": "shears"
             },
             "minecraft:durability": {
-                "max_durability": 500,
+                "max_durability": 120,
                 "damage_chance": {
-                    "min": 90,
-                    "max": 100
+                    "min": 25,
+                    "max": 25
                 }
             },
             "minecraft:repairable": {

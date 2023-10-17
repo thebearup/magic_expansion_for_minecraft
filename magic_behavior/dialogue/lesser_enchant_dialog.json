@@ -12,19 +12,19 @@
                     {
                         "name": "Enchant?",
                         "commands": [
-                            "/execute @initiator ~ ~ ~ function lesserenchant"
+                            "/execute as @initiator run function lesserenchant"
                         ]
                     },
                     {
                         "name": "Silk Touch?",
                         "commands": [
-                            "/execute @initiator ~ ~ ~ function silktouchenchant"
+                            "/execute as @initiator run function silktouchenchant"
                         ]
                     },
                     {
                         "name": "Fortune 1?",
                         "commands": [
-                            "/execute @initiator ~ ~ ~ function fortune1enchant"
+                            "/execute as @initiator run function fortune1enchant"
                         ]
                     }
                 ]
