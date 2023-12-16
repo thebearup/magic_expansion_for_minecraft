@@ -5,7 +5,7 @@
             {
                 "scene_tag": "arcane_enchant_dialog",
                 "npc_name": "Arcane Enchanter",
-                "text": "I can apply arcane enchantments to your in-hand equipment in exchange for 16 EXP levels:\nAqua affinity 1\nRespiration 2\nFeather falling 3\nDepth strider 2\nThorns 2\nMending 1\nAdditional options:\nBlue XP Bottle: 8\nRed XP Bottle: 20",
+                "text": "I can apply arcane enchantments to your in-hand equipment in exchange for 16 EXP levels:\nAqua affinity 1\nRespiration 3\nFeather falling 4\nDepth strider 3\nThorns 3\nMending 1\nAdditional options:\nBlue XP Bottle: 8\nRed XP Bottle: 20",
                 "on_open_commands": [],
                 "on_close_commands": [],
                 "buttons": [

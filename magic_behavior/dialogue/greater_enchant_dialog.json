@@ -5,7 +5,7 @@
             {
                 "scene_tag": "greater_enchant_dialog",
                 "npc_name": "Greater Enchanter",
-                "text": "I can apply high-level enchantments to your in-hand equipment in exchange for 8 EXP levels.\nProtection 3\nSharpness 3\nLooting 2\nUnbreaking 2\nEfficiency 3\nAdditional options:\nSilk Touch (2 levels)\nFortune2 (4 levels)",
+                "text": "I can apply high-level enchantments to your in-hand equipment in exchange for 8 EXP levels.\nProtection 4\nSharpness 4\nLooting 3\nUnbreaking 3\nEfficiency 4\nAdditional options:\nSilk Touch (2 levels)\nFortune3 (4 levels)",
                 "on_open_commands": [],
                 "on_close_commands": [],
                 "buttons": [
