@@ -5,7 +5,7 @@
             "identifier": "magic:turret_flame_spawner"
         },
         "tags": [
-            "mystic_table"
+            "crafting_table"
         ],
         "pattern": [
             " Z",

@@ -5,7 +5,7 @@
             "identifier": "magic:pylon_off_spawner"
         },
         "tags": [
-            "mystic_table"
+            "crafting_table"
         ],
         "pattern": [
             " Y",
