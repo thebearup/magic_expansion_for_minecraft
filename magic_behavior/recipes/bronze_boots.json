@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "lazy:bronze_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "lazy:copper_boots",
+                "count": 1
+			},
+            {
+				"item": "minecraft:iron_ingot",
+                "count": 1
+			},
+			{
+				"item": "minecraft:lapis_lazuli",
+                "count": 1
+			}
+		],
+		"result": {
+			"item": "lazy:bronze_boots",
+			"count": 1
+		}
+	}
+}

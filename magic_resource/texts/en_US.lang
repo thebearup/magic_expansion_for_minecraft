@@ -54,6 +54,7 @@ item.magic:iron_terminus_spawner.name=Iron Terminus
 item.magic:gold_terminus_spawner.name=Gold Terminus
 item.magic:emerald_terminus_spawner.name=Emerald Terminus
 item.magic:locator_spawner.name=Arcane Locator
+item.lazy:scatter_totem.name=Scatter Totem
 tile.magic:pylon_def_spawner.name=Healing Shrine
 tile.magic:pylon_off_spawner.name=Combat Shrine
 tile.magic:pylon_spd_spawner.name=Agility Shrine

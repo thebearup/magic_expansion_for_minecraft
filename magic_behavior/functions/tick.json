@@ -1,7 +1,8 @@
 {
     "values": [
+        "amulets",
+        "bronze_armor",
         "spellsword_armor",
-        "wizard_robe",
-        "amulets"
+        "wizard_robe"
     ]
   }

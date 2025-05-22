@@ -17,6 +17,30 @@
     "copper_terminus_spawner": {
       "textures": "textures/items/copper_terminus_spawner"
     },
+    "bronze_chest": {
+      "textures": "textures/items/bronze_chest"
+    },
+    "bronze_leggings": {
+      "textures": "textures/items/bronze_leggings"
+    },
+    "bronze_helmet": {
+      "textures": "textures/items/bronze_helmet"
+    },
+    "bronze_boots": {
+      "textures": "textures/items/bronze_boots"
+    },
+    "copper_chest": {
+      "textures": "textures/items/copper_chest"
+    },
+    "copper_leggings": {
+      "textures": "textures/items/copper_leggings"
+    },
+    "copper_helmet": {
+      "textures": "textures/items/copper_helmet"
+    },
+    "copper_boots": {
+      "textures": "textures/items/copper_boots"
+    },
     "dark_wand": {
       "textures": "textures/items/dark_wand"
     },
@@ -115,6 +139,9 @@
     },
     "ruby": {
       "textures": "textures/items/ruby"
+    },
+    "scatter_totem": {
+      "textures": "textures/items/scatter_totem"
     },
     "sculk_wand": {
       "textures": "textures/items/sculk_wand"
