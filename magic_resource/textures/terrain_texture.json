@@ -22,6 +22,12 @@
       "pylon_speed": {
         "textures": "textures/blocks/pylon_speed"
       },
+      "xp_generator_off": {
+			  "textures": "textures/blocks/xp_generator_off"
+      },
+      "xp_generator_on": {
+        "textures": "textures/blocks/xp_generator_on"
+      },
       "lesser_enchanting_table": {
         "textures": "textures/blocks/lesser_enchanting_table"
       },

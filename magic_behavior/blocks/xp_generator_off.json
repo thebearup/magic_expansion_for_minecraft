@@ -1,0 +1,39 @@
+{
+    "format_version": "1.21.70",
+    "minecraft:block": {
+        "description": {
+            "minecraft:display_name": "XP Generator",
+            "identifier": "lazy:xp_generator_off",
+            "is_experimental": false,
+            "register_to_creative_menu": true,
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+            "minecraft:destructible_by_explosion": false,
+            "minecraft:friction": 0.6,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#000000",
+            "minecraft:light_dampening": 0,
+            "minecraft:light_emission": 0,
+            "minecraft:geometry": "geometry.teleporter_pad",
+			"minecraft:material_instances": {
+				"*": {
+                    "texture": "xp_generator_off"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [	-8,	0,-8],
+				"size": [16, 2,	16]
+			},
+            "minecraft:custom_components": ["lazy:xp_generator_off_interact"]
+        }
+    }
+}

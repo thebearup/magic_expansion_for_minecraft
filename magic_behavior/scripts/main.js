@@ -93,6 +93,23 @@ const ArcaneEnchantInteract = {
         player.runCommand("dialogue open @e[type=magic:npc_book,c=1,r=5] @p arcane")
     }
 };
+const XPGeneratorOffInteract = {
+    onPlayerInteract(event) {
+        const player = event.player;
+        const block = event.block;
+        const { x, y, z } = block.location;
+        player.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} lazy:xp_generator_on`)
+    }
+};
+const XPGeneratorOnInteract = {
+    onPlayerInteract(event) {
+        const player = event.player;
+        const block = event.block;
+        const { x, y, z } = block.location;
+        player.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} lazy:xp_generator_off`)
+    }
+};
+// summon xp_orb ~ ~ ~
 
 world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
     blockComponentRegistry.registerCustomComponent(
@@ -126,6 +143,14 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
     blockComponentRegistry.registerCustomComponent(
         "magic:arcane_enchant_interact",
         ArcaneEnchantInteract
+    );
+    blockComponentRegistry.registerCustomComponent(
+        "lazy:xp_generator_off_interact",
+        XPGeneratorOffInteract
+    );
+    blockComponentRegistry.registerCustomComponent(
+        "lazy:xp_generator_on_interact",
+        XPGeneratorOnInteract
     );
 });
 
