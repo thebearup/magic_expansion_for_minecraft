@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "lazy:scatter_totem"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"",
+			"YXY",
+			" Y"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:dirt"
+			},
+			"Y": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "lazy:scatter_totem"
+		}
+	}
+}

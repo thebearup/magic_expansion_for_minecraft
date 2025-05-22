@@ -34,7 +34,14 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
             const source = e.source;
             source.runCommand("teleport @e[type=magic:npc_eye_blue,c=1]")
         }
-    });    
+    });
+    event.itemComponentRegistry.registerCustomComponent('lazy:scatter', {
+        onUse: e => {
+            const source = e.source;
+            source.runCommand("spreadplayers ~ ~ 0 5000 @s");
+            source.addEffect("slow_falling", 60, {amplifier: 0, showParticles: false});
+        }
+    });
 })
 
 /** @type {import("@minecraft/server").BlockCustomComponent} */
