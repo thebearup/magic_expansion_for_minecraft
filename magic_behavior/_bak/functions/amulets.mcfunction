@@ -3,8 +3,7 @@ effect @a[hasitem={item=magic:invisibility_amulet,location=slot.weapon.offhand}]
 
 # Grant slow falling if worn in main/off hand
 effect @a[hasitem={item=magic:float_amulet,location=slot.weapon.offhand}] slow_falling 1 0 true
-effect @a[hasitem={item=magic:float_amulet_2,location=slot.weapon.offhand}] slow_falling 1 0 true
-effect @a[hasitem={item=magic:float_amulet_2,location=slot.weapon.mainhand}] slow_falling 3 0 true
+effect @a[hasitem={item=magic:float_amulet,location=slot.weapon.mainhand}] slow_falling 3 0 true
 
 # Grant fire resistance if worn in off hand
 effect @a[hasitem={item=magic:fire_resistance_amulet,location=slot.weapon.offhand}] fire_resistance 1 0 true

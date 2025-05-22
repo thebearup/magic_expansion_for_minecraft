@@ -2,7 +2,7 @@
     "format_version": "1.17",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "magic:lesser_enchanting_spawner"
+            "identifier": "magic:lesser_enchanting_table"
         },
         "tags": [
             "crafting_table"
@@ -24,7 +24,7 @@
             }
         },
         "result": {
-            "item": "magic:lesser_enchanting_spawner"
+            "item": "magic:lesser_enchanting_table"
         }
     }
 }

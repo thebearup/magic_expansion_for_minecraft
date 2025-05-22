@@ -1,17 +1,18 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "magic:spellsword_leggings",
-			"category": "equipment"
+			"menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.leggings"
+            }
 		},
 		"components": {
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.leggings"
 			},
-			"minecraft:icon": {
-				"texture": "spellsword_leggings"
-			},
+			"minecraft:icon": "spellsword_leggings",
 			"minecraft:display_name": {
 				"value": "Spellsword Leggings §b§o+Speed"
 			},
@@ -19,9 +20,6 @@
 			"minecraft:enchantable": {
 				"value": 15,
 				"slot": "armor_legs"
-			},
-			"minecraft:armor": {
-				"protection": 6
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -36,7 +34,7 @@
 				]
 			},
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 6,
 				"slot": "slot.armor.legs"
 			},
 			"minecraft:durability": {

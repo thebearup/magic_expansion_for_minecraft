@@ -2,23 +2,35 @@
   "format_version": 2,
   "header": {
     "name": "Magic Expansion Behavior Pack",
-    "description": "v2.2.2 - Fix recipes",
+    "description": "v3.0.0 - Fix compatibility",
     "uuid": "5c24b3e2-760c-4843-9ffe-5cbae4c320bb",
     "min_engine_version": [1, 20, 30],
-    "version": [2, 2, 2]
+    "version": [3, 0, 0]
   },
   "modules": [
     {
       "description": "Magic Expansion",
       "type": "data",
       "uuid": "fe6aefea-3c22-46cb-b420-12eb43bc6e5c",
-      "version": [2, 2, 2]
+      "version": [3, 0, 0]
+    },
+    { 
+      "description": "Magic Expansion Scripts",
+      "type": "script",
+      "uuid": "2d0cc006-6f93-4140-8ab2-7b8703bf34c6",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "version": [3, 0, 0]
     }
   ],
   "dependencies": [
     {
-      "uuid": "2ec2f76c-6fae-4595-a523-235b74430bb6",
-      "version": [2, 2, 2]
+      "module_name": "@minecraft/server", 
+      "version": "1.19.0"
+    },
+    {
+      "module_name": "mojang-minecraft", 
+      "version": "1.19.0"
     }
   ]
 }

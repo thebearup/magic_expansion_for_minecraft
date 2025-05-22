@@ -1,17 +1,18 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "magic:spellsword_boots",
-			"category": "equipment"
+			"menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.boots"
+            }
 		},
 		"components": {
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.boots"
 			},
-			"minecraft:icon": {
-				"texture": "spellsword_boots"
-			},
+			"minecraft:icon":"spellsword_boots",
 			"minecraft:display_name": {
 				"value": "Spellsword Boots §b§o+Jump Boost"
 			},
@@ -19,9 +20,6 @@
 			"minecraft:enchantable": {
 				"value": 15,
 				"slot": "armor_feet"
-			},
-			"minecraft:armor": {
-				"protection": 3
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -36,7 +34,7 @@
 				]
 			},
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 3,
 				"slot": "slot.armor.feet"
 			},
 			"minecraft:durability": {

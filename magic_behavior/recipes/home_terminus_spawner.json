@@ -2,7 +2,7 @@
     "format_version": "1.12",
     "minecraft:recipe_shaped": {
       "description": {
-      "identifier": "magic:home_terminus_spawner"
+      "identifier": "magic:home_terminus"
       },
   
       
@@ -21,7 +21,7 @@
         }
       },
       "result": {
-        "item": "magic:home_terminus_spawner"
+        "item": "magic:home_terminus"
       }
     }
   }

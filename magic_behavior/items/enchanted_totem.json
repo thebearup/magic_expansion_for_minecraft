@@ -1,13 +1,17 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.21.10",
     "minecraft:item": {
         "description": {
             "identifier": "magic:enchanted_totem",
-            "category": "equipment"
+			"menu_category": {
+				"category": "equipment"
+			}
         },
         "components": {
             "minecraft:icon": {
-                "texture": "enchanted_totem"
+                "textures": {
+                    "default": "enchanted_totem"
+                }
             },
             "minecraft:display_name": {
                 "value":"Enchanted Totem"
@@ -18,13 +22,12 @@
             "minecraft:hand_equipped": true,
             "minecraft:max_stack_size": 1,
             "minecraft:allow_off_hand": true,
-            "minecraft:render_offsets": "tools",
             "minecraft:enchantable": {
                 "value": 10,
                 "slot": "shears"
             },
             "minecraft:durability": {
-                "max_durability": 2,
+                "max_durability": 120,
                 "damage_chance": {
                     "min": 90,
                     "max": 100
@@ -35,64 +38,24 @@
                     {
                         "items": [
                             "magic:enchanted_totem",
-                            "minecraft:lapis_block"
+                            "minecraft:lapis_lazuli"
                         ],
-                        "repair_amount": 3
+                        "repair_amount": 60
                     }
                 ]
-            },
-            "minecraft:on_use": {
-                "on_use": {
-                    "event": "teleport",
-                    "target": "self"
-                }
             },
             "minecraft:cooldown": {
                 "category": "enchanted_totem",
                 "duration": 1.0
             },
-            "minecraft:weapon": {
-                "on_hurt_entity": {
-                    "event": "yes:damage_event",
-                    "target": "self"
-                }
-            },
             "minecraft:mining_speed": 1,
             "minecraft:damage": 3,
-            "minecraft:can_destroy_in_creative": false
-        },
-        "events": {
-            "teleport": {
-                "sequence": [
-                    {
-                        "damage": {
-                            "type": "durability",
-                            "amount": 1,
-                            "target": "self"
-                        }
-                    },
-                    {
-                        "swing": {}
-                    },
-                    {
-                        "run_command": {
-                            "command": [
-                                "playsound portal.travel @s ~ ~ ~ 0.6",
-                                "particle minecraft:totem_particle ~ ~1 ~",
-                                "teleport @e[type=magic:npc_eye_blue,c=1,name=HomeTerminus]",
-                                "playsound portal.travel @s ~ ~ ~ 0.6",
-                                "particle minecraft:totem_particle ~ ~1 ~"
-                            ],
-                            "target": "holder"
-                        }
-                    }
-                ]
-            },
-            "yes:damage_event": {
-                "damage": {
-                    "type": "durability",
-                    "amount": 1
-                }
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:custom_components": [
+				"magic:go_home"
+			],
+            "minecraft:use_animation": {
+                "value": "brush"
             }
         }
     }

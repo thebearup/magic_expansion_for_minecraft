@@ -2,7 +2,7 @@
     "format_version": "1.17",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "magic:arcane_enchanting_spawner"
+            "identifier": "magic:arcane_enchanting_table"
         },
         "tags": [
             "crafting_table"
@@ -24,7 +24,7 @@
             }
         },
         "result": {
-            "item": "magic:arcane_enchanting_spawner"
+            "item": "magic:arcane_enchanting_table"
         }
     }
 }

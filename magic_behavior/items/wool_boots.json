@@ -1,17 +1,18 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "magic:wool_boots",
-			"category": "equipment"
+			"menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.boots"
+            }
 		},
 		"components": {
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.boots"
 			},
-			"minecraft:icon": {
-				"texture": "wool_boots"
-			},
+			"minecraft:icon": "wool_boots",
 			"minecraft:display_name": {
 				"value": "Wool Boots"
 			},
@@ -20,13 +21,10 @@
 				"value": 15,
 				"slot": "armor_feet"
 			},
-			"minecraft:armor": {
-				"protection": 1
-			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["minecraft:lapis_lazuli"],
+						"items": ["minecraft:black_wool"],
 						"repair_amount": 50
 					},
 					{
@@ -36,7 +34,7 @@
 				]
 			},
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 1,
 				"slot": "slot.armor.feet"
 			},
 			"minecraft:durability": {

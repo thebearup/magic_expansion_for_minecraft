@@ -2,7 +2,7 @@
     "format_version": "1.12",
     "minecraft:recipe_shaped": {
       "description": {
-      "identifier": "magic:copper_terminus_spawner"
+      "identifier": "magic:copper_terminus"
       },
   
       
@@ -17,11 +17,11 @@
           "item": "minecraft:copper_block"
         },
         "Y":{
-          "item": "minecraft:ender_eye"
+          "item": "minecraft:ender_pearl"
         }
       },
       "result": {
-        "item": "magic:copper_terminus_spawner"
+        "item": "magic:copper_terminus"
       }
     }
   }

@@ -1,17 +1,18 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "magic:wizard_leggings",
-			"category": "equipment"
+			"menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.leggings"
+            }
 		},
 		"components": {
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.leggings"
 			},
-			"minecraft:icon": {
-				"texture": "wizard_leggings"
-			},
+			"minecraft:icon": "wizard_leggings",
 			"minecraft:display_name": {
 				"value": "Wizard Leggings §b§o+Slow Falling"
 			},
@@ -20,13 +21,10 @@
 				"value": 15,
 				"slot": "armor_legs"
 			},
-			"minecraft:armor": {
-				"protection": 4
-			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["minecraft:lapis_lazuli"],
+						"items": ["minecraft:black_wool"],
 						"repair_amount": 50
 					},
 					{
@@ -36,7 +34,7 @@
 				]
 			},
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 4,
 				"slot": "slot.armor.legs"
 			},
 			"minecraft:durability": {

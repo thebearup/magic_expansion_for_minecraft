@@ -1,17 +1,18 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "magic:wool_helmet",
-			"category": "equipment"
+			"menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.helmet"
+            }
 		},
 		"components": {
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.helmet"
 			},
-			"minecraft:icon": {
-				"texture": "wool_helmet"
-			},
+			"minecraft:icon": "wool_helmet",
 			"minecraft:display_name": {
 				"value": "Wool Hood"
 			},
@@ -20,13 +21,10 @@
 				"value": 15,
 				"slot": "armor_head"
 			},
-			"minecraft:armor": {
-				"protection": 1
-			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["minecraft:lapis_lazuli"],
+						"items": ["minecraft:black_wool"],
 						"repair_amount": 50
 					},
 					{
@@ -36,7 +34,7 @@
 				]
 			},
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 1,
 				"slot": "slot.armor.head"
 			},
 			"minecraft:durability": {

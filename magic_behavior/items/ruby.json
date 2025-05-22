@@ -1,9 +1,11 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.10",
 	"minecraft:item": {
 	  "description": {
-		"category": "nature",
-		"identifier": "magic:ruby"
+		"identifier": "magic:ruby",
+		"menu_category": {
+			"category": "items"
+		}
 	  },
 	  "components": {
 		"minecraft:max_stack_size": 64,
@@ -11,6 +13,9 @@
 		"minecraft:stacked_by_data": false,
 		"minecraft:icon":{
 		   "texture":"ruby"
+		},
+		"minecraft:creative_category": {
+			"parent": "itemGroup.name.equipment"
 		},
 		"minecraft:display_name":{
 		   "value":"Ruby"

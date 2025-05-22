@@ -1,17 +1,18 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "magic:spellsword_helmet",
-			"category": "equipment"
+			"menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.helmet"
+            }
 		},
 		"components": {
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.helmet"
 			},
-			"minecraft:icon": {
-				"texture": "spellsword_helmet"
-			},
+			"minecraft:icon": "spellsword_helmet",
 			"minecraft:display_name": {
 				"value": "Spellsword Helmet §b§o+Saturation"
 			},
@@ -19,9 +20,6 @@
 			"minecraft:enchantable": {
 				"value": 15,
 				"slot": "armor_head"
-			},
-			"minecraft:armor": {
-				"protection": 3
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -36,7 +34,7 @@
 				]
 			},
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 3,
 				"slot": "slot.armor.head"
 			},
 			"minecraft:durability": {

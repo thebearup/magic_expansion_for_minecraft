@@ -1,17 +1,18 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "magic:mining_chest",
-			"category": "equipment"
+			"menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.chestplate"
+            }
 		},
 		"components": {
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.chestplate"
 			},
-			"minecraft:icon": {
-				"texture": "mining_chest"
-			},
+			"minecraft:icon": "mining_chest",
 			"minecraft:display_name": {
 				"value": "Mining Chestplate §b§o+Haste/Fire Res"
 			},
@@ -19,9 +20,6 @@
 			"minecraft:enchantable": {
 				"value": 15,
 				"slot": "armor_torso"
-			},
-			"minecraft:armor": {
-				"protection": 1
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -36,7 +34,7 @@
 				]
 			},
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 1,
 				"slot": "slot.armor.chest"
 			},
 			"minecraft:durability": {

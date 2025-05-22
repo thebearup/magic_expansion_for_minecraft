@@ -1,13 +1,17 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.21.10",
     "minecraft:item": {
         "description": {
             "identifier": "magic:haste_amulet",
-            "category": "equipment"
+			"menu_category": {
+				"category": "equipment"
+			}
         },
         "components": {
             "minecraft:icon": {
-                "texture": "haste_amulet"
+                "textures": {
+                    "default": "haste_amulet"
+                }
             },
             "minecraft:display_name": {
                 "value":"Haste Amulet"
@@ -18,7 +22,6 @@
             "minecraft:hand_equipped": true,
             "minecraft:max_stack_size": 1,
             "minecraft:allow_off_hand": true,
-            "minecraft:render_offsets": "tools",
             "minecraft:enchantable": {
                 "value": 10,
                 "slot": "shears"
@@ -30,67 +33,29 @@
                     "max": 100
                 }
             },
-            "minecraft:on_use": {
-                "on_use": {
-                    "event": "user_haste",
-                    "target": "self"
-                }
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "magic:haste_amulet",
+                            "minecraft:sugar"
+                        ],
+                        "repair_amount": 60
+                    }
+                ]
             },
             "minecraft:cooldown": {
                 "category": "haste_amulet",
                 "duration": 1.0
             },
-            "minecraft:weapon": {
-                "on_hurt_entity": {
-                    "event": "yes:damage_event",
-                    "target": "self"
-                }
-            },
             "minecraft:mining_speed": 1,
             "minecraft:damage": 3,
-            "minecraft:can_destroy_in_creative": false
-        },
-        "events": {
-            "user_haste": {
-                "sequence": [
-                    {
-                        "damage": {
-                            "type": "durability",
-                            "amount": 1,
-                            "target": "self"
-                        }
-                    },
-                    {
-                        "swing": {}
-                    },
-                    {
-                        "condition": "(!query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') && !query.is_item_name_any('slot.armor.head', 0, 'magic:spellsword_helmet')) || (!query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') && !query.is_item_name_any('slot.armor.chest', 0, 'magic:spellsword_chest')) || (!query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') && !query.is_item_name_any('slot.armor.legs', 0, 'magic:spellsword_leggings')) || (!query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots') && !query.is_item_name_any('slot.armor.feet', 0, 'magic:spellsword_boots'))",
-                        "run_command": {
-                            "command": [
-                                "effect @s mining_fatigue 0 0 true",
-                                "effect @s haste 60 0 true"
-                                
-                            ],
-                            "target": "holder"
-                        }
-                    },
-                    {
-                        "condition": "(query.is_item_name_any('slot.armor.head', 0, 'magic:wizard_helmet') || query.is_item_name_any('slot.armor.head', 0, 'magic:spellsword_helmet')) && (query.is_item_name_any('slot.armor.chest', 0, 'magic:wizard_chest') || query.is_item_name_any('slot.armor.chest', 0, 'magic:spellsword_chest')) && (query.is_item_name_any('slot.armor.legs', 0, 'magic:wizard_leggings') || query.is_item_name_any('slot.armor.legs', 0, 'magic:spellsword_leggings')) && (query.is_item_name_any('slot.armor.feet', 0, 'magic:wizard_boots') || query.is_item_name_any('slot.armor.feet', 0, 'magic:spellsword_boots'))",
-                        "run_command": {
-                            "command": [
-                                "effect @s mining_fatigue 0 0 true",
-                                "effect @s haste 300 2 true"
-                            ],
-                            "target": "holder"
-                        }
-                    }
-                ]
-            },
-            "yes:damage_event": {
-                "damage": {
-                    "type": "durability",
-                    "amount": 1
-                }
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:custom_components": [
+				"magic:haste"
+			],
+            "minecraft:use_animation": {
+                "value": "brush"
             }
         }
     }

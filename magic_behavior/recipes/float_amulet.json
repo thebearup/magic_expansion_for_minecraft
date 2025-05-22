@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "magic:float_amulet_2"
+      "identifier": "magic:float_amulet"
     },
     "tags": [
       "crafting_table"
@@ -21,7 +21,7 @@
       }
     },
     "result": {
-      "item": "magic:float_amulet_2"
+      "item": "magic:float_amulet"
     }
   }
 }

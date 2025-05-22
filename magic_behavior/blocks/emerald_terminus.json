@@ -1,75 +1,39 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.21.70",
     "minecraft:block": {
+        "minecraft:display_name": "Emerald Terminus",
         "description": {
             "identifier": "magic:emerald_terminus",
             "is_experimental": false,
-            "register_to_creative_menu": true
+            "register_to_creative_menu": true,
+            "menu_category": {
+                "category": "construction"
+            }
         },
         "components": {
-            "minecraft:destroy_time": 1,
-            "minecraft:explosion_resistance": 5,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+            "minecraft:destructible_by_explosion": false,
             "minecraft:friction": 0.6,
             "minecraft:flammable": {
                 "flame_odds": 0,
                 "burn_odds": 0
             },
-            "minecraft:map_color": "#FFFFFF",
-            "minecraft:block_light_absorption": 0,
-            "minecraft:block_light_emission": 0.750,
-            "minecraft:on_placed": {
-                "event": "block_placed",
-                "target": "self"
-            },
-            "minecraft:on_player_destroyed":{
-                "event" : "block_destroyed",
-                "target": "self"
-            },
-            "minecraft:on_interact": {
-                "event": "teleporter",
-                "target" : "self"
-            },
+            "minecraft:map_color": "#000000",
+            "minecraft:light_dampening": 0,
+            "minecraft:light_emission": 0,
             "minecraft:geometry": "geometry.teleporter_pad",
 			"minecraft:material_instances": {
 				"*": {
-                    "texture": "emerald_terminus_new",
-					"render_method": "alpha_test"
+                    "texture": "emerald_terminus_new"
 				}
 			},
-			"minecraft:pick_collision": {
+			"minecraft:collision_box": {
 				"origin": [	-8,	0,-8],
 				"size": [16, 2,	16]
 			},
-			"minecraft:entity_collision": {
-				"origin": [	-8,	0, -8],
-				"size": [ 16, 2, 16	]
-			}
-        },
-        "events": {
-          "block_placed": {
-              "run_command": {
-                  "command": [
-                      "summon magic:npc_eye_green EmeraldTerminus ~ ~1 ~",
-                      "dialogue change @e[type=magic:npc_eye_green,c=1,r=1] emerald_terminus_main",
-                      "tickingarea add ~ ~ ~ ~ ~ ~"
-                  ]
-              }
-          },
-          "block_destroyed": {
-              "run_command": {
-                  "command": [
-                      "kill @e[type=magic:npc_eye_green,c=1,r=1]",
-                      "tickingarea remove ~ ~ ~"
-                  ]
-              }
-          },
-          "teleporter": {
-            "run_command": {
-                "command": [
-                    "dialogue open @e[type=magic:npc_eye_green,c=1] @p emerald_terminus_main"
-                ]
-            }
-          }
+            "minecraft:custom_components": ["magic:emerald_terminus_interact"]
         }
     }
 }
