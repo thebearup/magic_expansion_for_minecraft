@@ -19,6 +19,11 @@ tile.magic:pylon_defense.name=Healing Shrine
 tile.magic:pylon_offense.name=Combat Shrine
 tile.magic:pylon_speed.name=Agility Shrine
 tile.magic:mystic_table.name=Mystic Table
+tile.magic:pylon_def_spawner.name=Healing Shrine
+tile.magic:pylon_off_spawner.name=Combat Shrine
+tile.magic:pylon_spd_spawner.name=Agility Shrine
+tile.lazy:xp_generator_off.name=XP Generator
+tile.lazy:xp_generator_on.name=XP Generator
 
 item.magic:fire_wand.name=Flame Wand
 item.magic:ice_wand.name=Frost Wand
@@ -55,9 +60,6 @@ item.magic:gold_terminus_spawner.name=Gold Terminus
 item.magic:emerald_terminus_spawner.name=Emerald Terminus
 item.magic:locator_spawner.name=Arcane Locator
 item.lazy:scatter_totem.name=Scatter Totem
-tile.magic:pylon_def_spawner.name=Healing Shrine
-tile.magic:pylon_off_spawner.name=Combat Shrine
-tile.magic:pylon_spd_spawner.name=Agility Shrine
 
 entity.flameball.name=Flame Ball
 entity.frostball.name=Frost Ball
@@ -79,3 +81,4 @@ entity.magic:pylon_off.name=Combat Shrine
 entity.magic:pylon_spd.name=Agility Shrine
 entity.magic:turret_flame=Flame Turret
 entity.magic:turret_frost=Frost Turret
+

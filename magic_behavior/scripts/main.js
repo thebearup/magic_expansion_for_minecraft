@@ -19,14 +19,14 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
     event.itemComponentRegistry.registerCustomComponent('magic:fire_res', {
         onUse: e => {
             const source = e.source;
-            source.addEffect("fire_resistance", 60, {amplifier: 0, showParticles: false})
+            source.addEffect("fire_resistance", 7200, {amplifier: 0, showParticles: false})
         }
     });
     event.itemComponentRegistry.registerCustomComponent('magic:haste', {
         onUse: e => {
             const source = e.source;
-            source.addEffect("haste", 60, {amplifier: 0, showParticles: false})
-            source.addEffect("mining_fatigue", 0, {amplifier: 0, showParticles: false})
+            source.addEffect("haste", 7200, {amplifier: 0, showParticles: false})
+            // source.addEffect("mining_fatigue", 0, {amplifier: 0, showParticles: false})
         }
     });
     event.itemComponentRegistry.registerCustomComponent('magic:go_home', {
@@ -38,14 +38,14 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
     event.itemComponentRegistry.registerCustomComponent('magic:teleport', {
         onUse: e => {
             const source = e.source;
-            source.runCommand("teleport @s ^ ^ ^100]")
+            source.runCommand("teleport @s ^ ^ ^100")
         }
     });
     event.itemComponentRegistry.registerCustomComponent('lazy:scatter', {
         onUse: e => {
             const source = e.source;
             source.runCommand("spreadplayers ~ ~ 0 5000 @s");
-            source.addEffect("slow_falling", 60, {amplifier: 0, showParticles: false});
+            source.addEffect("slow_falling", 7200, {amplifier: 0, showParticles: false});
         }
     });
 })
@@ -96,7 +96,7 @@ const GreaterEnchantInteract = {
 const ArcaneEnchantInteract = {
     onPlayerInteract(event) {
         const player = event.player;
-        player.runCommand("dialogue open @e[type=magic:npc_book,c=1,r=5] @p arcane")
+        player.runCommand("dialogue open @e[type=magic:npc_book,c=1,r=5] @p arcane_enchant_dialog")
     }
 };
 const XPGeneratorOffInteract = {
@@ -113,10 +113,8 @@ const XPGeneratorOnInteract = {
         const block = event.block;
         const { x, y, z } = block.location;
         player.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} lazy:xp_generator_off`)
-    }
-};
-const XPGenerate = {
-    onRandomTick(event) {
+    },
+    onTick(event) {
         const dimension = event.dimension;
         const block = event.block;
         const { x, y, z } = block.location;
@@ -167,10 +165,6 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
         "lazy:xp_generator_on_interact",
         XPGeneratorOnInteract
     );
-    blockComponentRegistry.registerCustomComponent(
-        "lazy:xp_generate",
-        XPGenerate
-    );
 });
 
 world.afterEvents.playerPlaceBlock.subscribe(event => { 
@@ -207,15 +201,15 @@ world.afterEvents.playerPlaceBlock.subscribe(event => {
     };
     if (block.typeId === "magic:lesser_enchanting_table") { // Change to desired block
         player.runCommand(`summon magic:npc_book ${x} ${y + 1} ${z} facing @p "" LesserEnchanter`);
-        player.runCommand("dialogue change @e[type=magic:npc_book,c=1,r=5] lesser_enchant_dialog");
+        player.runCommand("dialogue change @e[type=magic:npc_book,c=1,r=5,name=LesserEnchanter] lesser_enchant_dialog");
     };
     if (block.typeId === "magic:greater_enchanting_table") { // Change to desired block
-        player.runCommand(`summon magic:npc_book ${x} ${y + 1} ${z} facing @p "" LesserEnchanter`);
-        player.runCommand("dialogue change @e[type=magic:npc_book,c=1,r=5] greater_enchant_dialog");
+        player.runCommand(`summon magic:npc_book ${x} ${y + 1} ${z} facing @p "" GreaterEnchanter`);
+        player.runCommand("dialogue change @e[type=magic:npc_book,c=1,r=5,name=GreaterEnchanter] greater_enchant_dialog");
     };
     if (block.typeId === "magic:arcane_enchanting_table") { // Change to desired block
-        player.runCommand(`summon magic:npc_book ${x} ${y + 1} ${z} facing @p "" LesserEnchanter`);
-        player.runCommand("dialogue change @e[type=magic:npc_book,c=1,r=5] arcane_enchant_dialog");
+        player.runCommand(`summon magic:npc_book ${x} ${y + 1} ${z} facing @p "" ArcaneEnchanter`);
+        player.runCommand("dialogue change @e[type=magic:npc_book,c=1,r=5,name=ArcaneEnchanter] arcane_enchant_dialog");
     };
 
 });

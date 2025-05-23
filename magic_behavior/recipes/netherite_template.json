@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "magic:ruby"
+      "identifier": "magic:netherite_upgrade_smithing_template"
     },
     "tags": [
       "crafting_table"
@@ -17,11 +17,11 @@
         "item": "minecraft:lapis_lazuli"
       },
       "Y": {
-        "item": "minecraft:redstone_block"
+        "item": "minecraft:netherrack"
       }
     },
     "result": {
-      "item": "magic:ruby"
+      "item": "minecraft:netherite_upgrade_smithing_template"
     }
   }
 }

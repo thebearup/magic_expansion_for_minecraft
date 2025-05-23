@@ -29,6 +29,11 @@
 					"texture": "xp_generator_on"
 				}
 			},
+			"minecraft:loot": "loot_tables/chests/xp_generator_off.json",
+			"minecraft:tick": {
+				"interval_range": [40, 80],
+				"looping": true
+			},
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
@@ -42,8 +47,7 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"lazy:xp_generator_on_interact",
-				"lazy:xp_generate"
+				"lazy:xp_generator_on_interact"
 			]
 		}
 	}

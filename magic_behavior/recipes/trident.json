@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "lazy:trident"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			" Y",
+			" Y"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:heart_of_the_sea"
+			},
+			"Y": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "minecraft:trident"
+		}
+	}
+}
