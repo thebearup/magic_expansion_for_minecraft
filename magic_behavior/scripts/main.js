@@ -35,6 +35,12 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
             source.runCommand("teleport @e[type=magic:npc_eye_blue,c=1]")
         }
     });
+    event.itemComponentRegistry.registerCustomComponent('magic:teleport', {
+        onUse: e => {
+            const source = e.source;
+            source.runCommand("teleport @s ^ ^ ^100]")
+        }
+    });
     event.itemComponentRegistry.registerCustomComponent('lazy:scatter', {
         onUse: e => {
             const source = e.source;

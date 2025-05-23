@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "lazy:xp_generator_off"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"",
+			" Y",
+			"XXX"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:redstone_block"
+			},
+			"Y": {
+				"item": "minecraft:netherite_ingot"
+			}
+		},
+		"result": {
+			"item": "lazy:xp_generator_off"
+		}
+	}
+}
