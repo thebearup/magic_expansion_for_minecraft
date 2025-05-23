@@ -109,7 +109,16 @@ const XPGeneratorOnInteract = {
         player.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} lazy:xp_generator_off`)
     }
 };
-// summon xp_orb ~ ~ ~
+const XPGenerate = {
+    onRandomTick(event) {
+        const dimension = event.dimension;
+        const block = event.block;
+        const { x, y, z } = block.location;
+        dimension.runCommand(`summon xp_orb ${x} ${y} ${z}`)
+        dimension.runCommand(`summon xp_orb ${x} ${y} ${z}`)
+        dimension.runCommand(`summon xp_orb ${x} ${y} ${z}`)
+    }
+};
 
 world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
     blockComponentRegistry.registerCustomComponent(
@@ -151,6 +160,10 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
     blockComponentRegistry.registerCustomComponent(
         "lazy:xp_generator_on_interact",
         XPGeneratorOnInteract
+    );
+    blockComponentRegistry.registerCustomComponent(
+        "lazy:xp_generate",
+        XPGenerate
     );
 });
 

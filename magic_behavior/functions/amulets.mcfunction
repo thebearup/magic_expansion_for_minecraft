@@ -1,5 +1,5 @@
 # Grant invisibility if amulet worn in off hand
-effect @a[hasitem={item=magic:invisibility_amulet,location=slot.weapon.offhand}] invisibility 1 0 true
+# effect @a[hasitem={item=magic:invisibility_amulet,location=slot.weapon.offhand}] invisibility 1 0 true
 
 # Grant slow falling if worn in main/off hand
 effect @a[hasitem={item=magic:float_amulet,location=slot.weapon.offhand}] slow_falling 1 0 true
